@@ -4,7 +4,7 @@ $color-fg:					#7c8081;
 $color-light-blue:   #48AFE3;
 $color-dark-blue:     #37466A;
 
-$color-border:        transparentize($color-fg, 0.8);
+$color-border:        $color-light-blue;
 
 $color-header-bg:     $color-dark-blue;
 $color-header-fg:     #ffffff;

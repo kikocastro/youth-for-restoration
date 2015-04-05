@@ -518,6 +518,14 @@ $pattern-background-size: 25em;
 		margin-bottom: 5em;
 		padding: 5em;
 
+		.button {
+			&:hover {
+				border-color: $color-light-blue;
+				background: $color-light-blue;
+				color: $color-one-fg !important;
+			}
+		}
+
 		&.style1 {
 			padding: 0;
 		}
