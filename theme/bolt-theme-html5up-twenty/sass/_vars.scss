@@ -1,27 +1,32 @@
 $color-bg:					#ffffff;
-$color-fg:					#48AFE3;
+$color-fg:					#7c8081;
 
-$color-border:				transparentize($color-fg, 0.8);
+$color-light-blue:   #48AFE3;
+$color-dark-blue:     #37466A;
 
-$color-header-bg:			#37466A;
-$color-header-fg:			#ffffff;
-$color-header-alt-bg:		transparent;
-$color-header-alt-fg:		#fff;
+$color-border:        transparentize($color-fg, 0.8);
 
-$color-banner-bg:			#898786;
-$color-banner-fg:			#fff;
-$color-banner-inner-bg:		#341b2b;
-$color-banner-inner-fg:		#fff;
+$color-header-bg:     $color-dark-blue;
+$color-header-fg:     #ffffff;
+$color-header-alt-bg:   transparent;
+$color-header-alt-fg:   #fff;
 
-$color-footer-bg:  		  	#37466A;//#e2e5e8;
+$color-banner-bg:     #898786;
+$color-banner-fg:     #fff;
+$color-banner-inner-bg:   #341b2b;
+$color-banner-inner-fg:   #fff;
+
+$color-footer-bg:         $color-dark-blue;//#e2e5e8;
 $color-footer-fg:         #ffffff;
 
-$color-one-bg:				#48AFE3;
-$color-one-fg:				#fff;
-$color-two-bg:				#fff;
-$color-two-fg:				inherit;
-$color-three-bg:			#645862;
-$color-three-fg:			#fff;
+$color-one-bg:        $color-light-blue;
+$color-one-fg:        #fff;
+$color-two-bg:        #fff;
+$color-two-fg:        inherit;
+$color-three-bg:      #645862;
+$color-three-fg:      #fff;
+
+
 
 $color-navPanel-bg:			#1c2021;
 $color-navPanel-fg:			#fff;

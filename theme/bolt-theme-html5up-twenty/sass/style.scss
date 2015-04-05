@@ -46,6 +46,7 @@ $pattern-background-size: 25em;
 
 	strong, b {
 		font-weight: 400;
+		color: $color-light-blue;
 	}
 
 	p, ul, ol, dl, table, blockquote {
@@ -53,7 +54,7 @@ $pattern-background-size: 25em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: inherit;
+		color: $color-light-blue;
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
@@ -527,7 +528,10 @@ $pattern-background-size: 25em;
 			// background-position: bottom left, bottom right;
 			// background-repeat: no-repeat, no-repeat;
 			// background-size: $pattern-background-size, $pattern-background-size;
-			color: $color-one-fg;
+				color: $color-one-fg;
+			h2 {
+				color: $color-one-fg;
+			}
 
 			.button {
 				&:hover {
@@ -806,6 +810,10 @@ $pattern-background-size: 25em;
 		background-size: $pattern-background-size;
 		padding: 7em 0;
 
+		a {
+			color: $color-light-blue;
+		}
+
 		> :last-child {
 			margin-bottom: 0;
 		}
@@ -826,7 +834,7 @@ $pattern-background-size: 25em;
 	}
 
 	body.index #main {
-		// padding-top: 5em;
+		padding-top: 5em;
 	}
 
 /* CTA */
