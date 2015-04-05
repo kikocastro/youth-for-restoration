@@ -315,24 +315,6 @@ $pattern-background-size: 25em;
 					background: lighten($color-google-plus-bg, 4);
 				}
 			}
-
-			&.fa-github {
-				background: $color-github-bg;
-				color: $color-github-fg;
-
-				&:hover {
-					background: lighten($color-github-bg, 4);
-				}
-			}
-
-			&.fa-dribbble {
-				background: $color-dribbble-bg;
-				color: $color-dribbble-fg;
-
-				&:hover {
-					background: lighten($color-dribbble-bg, 4);
-				}
-			}
 		}
 
 		&.featured {
@@ -541,10 +523,10 @@ $pattern-background-size: 25em;
 
 		&.style2 {
 			background-color: $color-one-bg;
-			background-image: url('images/light-bl.svg'), url('images/light-br.svg');
-			background-position: bottom left, bottom right;
-			background-repeat: no-repeat, no-repeat;
-			background-size: $pattern-background-size, $pattern-background-size;
+			// background-image: url('images/light-bl.svg'), url('images/light-br.svg');
+			// background-position: bottom left, bottom right;
+			// background-repeat: no-repeat, no-repeat;
+			// background-size: $pattern-background-size, $pattern-background-size;
 			color: $color-one-fg;
 
 			.button {
@@ -821,9 +803,6 @@ $pattern-background-size: 25em;
 /* Main */
 
 	#main {
-		background-image: url('images/dark-tl.svg'), url('images/dark-tr.svg'), url('images/dark-bl.svg'), url('images/dark-br.svg');
-		background-position: top left, top right, bottom left, bottom right;
-		background-repeat: no-repeat;
 		background-size: $pattern-background-size;
 		padding: 7em 0;
 
@@ -847,18 +826,18 @@ $pattern-background-size: 25em;
 	}
 
 	body.index #main {
-		padding-top: 5em;
+		// padding-top: 5em;
 	}
 
 /* CTA */
 
 	#cta {
-		background-attachment: scroll, scroll, scroll, fixed;
+		background-attachment: scroll, fixed;
 		background-color: $color-three-bg;
-		background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../images/banner.jpg');
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
+		background-image: url('images/overlay.png'), url('../images/banner.jpg');
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
 		color: $color-three-fg;
 		padding: 5em;
 		text-align: center;

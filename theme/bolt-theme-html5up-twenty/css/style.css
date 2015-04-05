@@ -35,7 +35,7 @@ a {
   -o-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  color: #3fb1a3;
+  color: #1a7aab;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent; }
@@ -158,7 +158,7 @@ textarea {
   input[type="password"]:focus,
   input[type="email"]:focus,
   textarea:focus {
-    border-color: #83d3c9; }
+    border-color: #48AFE3; }
 
 input[type="text"],
 input[type="password"],
@@ -255,16 +255,6 @@ input[type="email"] {
       color: #fff; }
       .icon.circle.fa-google-plus:hover {
         background: #df7b77; }
-    .icon.circle.fa-github {
-      background: #dcad8b;
-      color: #fff; }
-      .icon.circle.fa-github:hover {
-        background: #e1b89b; }
-    .icon.circle.fa-dribbble {
-      background: #da83ae;
-      color: #fff; }
-      .icon.circle.fa-dribbble:hover {
-        background: #df93b8; }
   .icon.featured {
     cursor: default;
     display: block;
@@ -385,15 +375,15 @@ input[type="reset"],
   input[type="submit"].special,
   input[type="reset"].special,
   .button.special {
-    background: #83d3c9;
-    border-color: #83d3c9;
+    background: #48AFE3;
+    border-color: #48AFE3;
     color: #fff !important; }
     input[type="button"].special:hover,
     input[type="submit"].special:hover,
     input[type="reset"].special:hover,
     .button.special:hover {
-      background: #96dad1 !important;
-      border-color: #96dad1 !important; }
+      background: #5eb9e6 !important;
+      border-color: #5eb9e6 !important; }
   input[type="button"].fit,
   input[type="submit"].fit,
   input[type="reset"].fit,
@@ -414,18 +404,14 @@ input[type="reset"],
   .wrapper.style1 {
     padding: 0; }
   .wrapper.style2 {
-    background-color: #83d3c9;
-    background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-    background-position: bottom left, bottom right;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 25em, 25em;
+    background-color: #48AFE3;
     color: #fff; }
     .wrapper.style2 .button:hover {
       background: rgba(255, 255, 255, 0.15) !important; }
     .wrapper.style2 .button.special {
       background: #fff;
       border-color: #fff;
-      color: #83d3c9 !important; }
+      color: #48AFE3 !important; }
       .wrapper.style2 .button.special:hover {
         border-color: inherit !important;
         color: #fff !important; }
@@ -464,9 +450,9 @@ input[type="reset"],
   100% {
     top: 0; } }
 #header {
-  background: #fff;
+  background: #37466A;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-  color: inherit;
+  color: #ffffff;
   cursor: default;
   font-size: 0.8em;
   left: 0;
@@ -583,7 +569,7 @@ input[type="reset"],
       padding: 0 1em;
       border: 0; }
     .dropotron > li:hover > a {
-      background: #83d3c9;
+      background: #48AFE3;
       color: #fff; }
     .dropotron > li:first-child {
       border-top: 0; }
@@ -671,9 +657,6 @@ input[type="reset"],
 
 /* Main */
 #main {
-  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
-  background-position: top left, top right, bottom left, bottom right;
-  background-repeat: no-repeat;
   background-size: 25em;
   padding: 7em 0; }
   #main > :last-child {
@@ -687,17 +670,14 @@ input[type="reset"],
       padding-top: 0;
       margin-top: 0; }
 
-body.index #main {
-  padding-top: 5em; }
-
 /* CTA */
 #cta {
-  background-attachment: scroll, scroll, scroll, fixed;
+  background-attachment: scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
-  background-position: top left, top right, top left, bottom center;
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-size: 25em, 25em, auto, cover;
+  background-image: url("images/overlay.png"), url("../images/banner.jpg");
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   color: #fff;
   padding: 5em;
   text-align: center; }
@@ -706,8 +686,8 @@ body.index #main {
 
 /* Footer */
 #footer {
-  background: #E8EEF4;
-  color: #7c8081;
+  background: #37466A;
+  color: #ffffff;
   padding: 5em 5em 10em 5em;
   text-align: center; }
   #footer .copyright {
