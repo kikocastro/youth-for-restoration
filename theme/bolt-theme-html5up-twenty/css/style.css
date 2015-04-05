@@ -457,7 +457,7 @@ input[type="reset"],
   100% {
     top: 0; } }
 #header {
-  background: #37466A;
+  background: #204460;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
   color: #ffffff;
   cursor: default;
@@ -698,7 +698,7 @@ body.index #main {
 
 /* Footer */
 #footer {
-  background: #37466A;
+  background: #204460;
   color: #ffffff;
   padding: 5em 5em 10em 5em;
   text-align: center; }
