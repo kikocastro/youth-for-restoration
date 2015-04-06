@@ -1,27 +1,32 @@
-$color-bg:					#f3f6fa;
+$color-bg:					#ffffff;
 $color-fg:					#7c8081;
 
-$color-border:				transparentize($color-fg, 0.8);
+$color-light-blue:   #48AFE3;
+$color-dark-blue:     #204460; //#37466A;
 
-$color-header-bg:			#fff;
-$color-header-fg:			inherit;
-$color-header-alt-bg:		transparent;
-$color-header-alt-fg:		#fff;
+$color-border:        $color-light-blue;
 
-$color-banner-bg:			#898786;
-$color-banner-fg:			#fff;
-$color-banner-inner-bg:		#341b2b;
-$color-banner-inner-fg:		#fff;
+$color-header-bg:     $color-dark-blue;
+$color-header-fg:     #ffffff;
+$color-header-alt-bg:   transparent;
+$color-header-alt-fg:   #fff;
 
-$color-footer-bg:			#E8EEF4;//#e2e5e8;
-$color-footer-fg:			#7c8081;
+$color-banner-bg:     #898786;
+$color-banner-fg:     #fff;
+$color-banner-inner-bg:   #341b2b;
+$color-banner-inner-fg:   #fff;
 
-$color-one-bg:				#83d3c9;
-$color-one-fg:				#fff;
-$color-two-bg:				#fff;
-$color-two-fg:				inherit;
-$color-three-bg:			#645862;
-$color-three-fg:			#fff;
+$color-footer-bg:         $color-dark-blue;
+$color-footer-fg:         #ffffff;
+
+$color-one-bg:        $color-light-blue;
+$color-one-fg:        #fff;
+$color-two-bg:        #fff;
+$color-two-fg:        inherit;
+$color-three-bg:      #645862;
+$color-three-fg:      #fff;
+
+
 
 $color-navPanel-bg:			#1c2021;
 $color-navPanel-fg:			#fff;

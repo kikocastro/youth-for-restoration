@@ -53,15 +53,19 @@
 
     </head>
     <body class="{% block bodyclass %}{% endblock %}">
-    
+
         {% block header %}
             <header id="header" class="{% block headerclass %}{% endblock %}">
-                <h1 id="logo"><a href="{{ paths.root }}">{{ app.config.get('general/sitename') }}{% if app.config.get('general/payoff') is not empty %} <span>{{ app.config.get('general/payoff') }}</span>{% endif %}</a></h1>
-                <nav id="nav">
-                    <ul>
-                        {{ menu('main', '_menu.twig') }}
-                    </ul>
-                </nav>
+                <div class="logo">
+                    <a href="{{ paths.root }}" class="no-underline">
+                        <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" height="auto" alt="Love our community and cookies? Come and join us!">
+                    </a>
+                </div>
+                    <nav id="nav">
+                        <ul>
+                            {{ menu('main', '_menu.twig') }}
+                        </ul>
+                    </nav>
             </header>
         {% endblock header %}
 
@@ -70,7 +74,7 @@
 
         {% block main %}
         {% endblock main %}
-        
+
         {% block cta %}
         {% endblock cta %}
 
@@ -100,7 +104,7 @@
                     {%- endif %}
 
                 </ul>
-                
+
                 <ul class="copyright">
                     <li>{{ theme.copyright }}</li>
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
