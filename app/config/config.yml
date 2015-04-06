@@ -47,7 +47,7 @@ cron_hour: 3
 # Bolt can insert a <link rel="shortcut icon"> for all pages on the site. Note
 # that the location given is relative to the currently selected theme. If you
 # want to set the icon yourself, just don't enable the following line.
-#favicon: images/favicon-bolt.ico
+favicon: images/favicon.ico
 
 # The default content to use for the homepage, and the template to render it
 # with. Note: If you've changed the filename, and your changes do not show up on
