@@ -115,6 +115,8 @@ header.special {
   header.special h2 + p {
     margin-bottom: 0;
     padding-top: 1.5em; }
+  header.special .logo {
+    width: 140px; }
   header.special .icon {
     cursor: default;
     height: 7em;
@@ -463,7 +465,7 @@ input[type="reset"],
   cursor: default;
   font-size: 0.8em;
   left: 0;
-  padding: 1em 1.5em;
+  padding: 0.75em 2em 0.5em 2em;
   position: fixed;
   top: 0;
   width: 100%;
@@ -478,7 +480,7 @@ input[type="reset"],
     position: absolute;
     right: 1.5em;
     text-transform: uppercase;
-    top: 0.75em; }
+    top: 2em; }
     #header nav ul li {
       display: inline-block;
       margin-left: 1.5em; }
@@ -534,11 +536,13 @@ input[type="reset"],
     background: transparent;
     box-shadow: none;
     color: #fff;
-    padding: 2em 2.5em;
+    padding: 1em 1.5em;
     position: absolute; }
+    #header.alt img {
+      width: 150px; }
     #header.alt nav {
       right: 2.5em;
-      top: 1.75em; }
+      top: 2em; }
       #header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
         border: solid 1px; }
 
