@@ -532,6 +532,12 @@ $pattern-background-size: 25em;
 
 		&.style1 {
 			padding: 0;
+
+			.icon {
+				font-size: 57px;
+				bottom: 15px;
+				opacity: 0.25;
+			}
 		}
 
 		&.style2 {
