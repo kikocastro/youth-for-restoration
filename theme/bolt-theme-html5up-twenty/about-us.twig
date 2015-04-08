@@ -61,3 +61,18 @@
   </article>
 
 {% endblock main %}
+
+{% block cta %}
+  <section id="cta">
+    <header>
+      <h2>{{ record.cta_title }}</h2>
+      {{ record.cta_text }}
+    </header>
+    <footer>
+      <ul class="buttons">
+        <li><a href="" class="button special">Become a volunteer</a></li>
+        <li><a href="" class="button">Donate</a></li>
+      </ul>
+    </footer>
+  </section>
+{% endblock cta %}
