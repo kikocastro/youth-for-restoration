@@ -1,0 +1,54 @@
+{% extends 'master.twig' %}
+
+{% block bodyclass %}
+  contact
+{% endblock bodyclass %}
+
+{% block main %}
+
+  <div class="image featured">
+    <img src="{{ image(record.image) }}"/>
+  </div>
+
+  <article id="main">
+
+    <header class="special container">
+      <h2>{{ record.title }}</h2>
+      {{ record.about_us }}
+    </header>
+
+    <div class="large-4">
+
+      <h2>About Us</h2>
+      {{ record.about_us }}
+      <h2>Our Mission</h2>
+      {{ record.our_mission }}
+    </div>
+
+    <section class="wrapper style2 container special-alt">
+      <div class="row half">
+        <div class="8u">
+          <header>
+            <h2>Founder</h2>
+          </header>
+          {{ record.founder }}
+          <header>
+            <h2>Board Members</h2>
+          </header>
+          {{ record.board }}
+        </div>
+        <div class="4u skel-cell-important">
+          <ul class="featured-icons">
+            <li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
+            <li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+            <li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
+            <li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
+            <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+            <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </article>
+
+{% endblock main %}
