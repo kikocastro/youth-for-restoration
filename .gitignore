@@ -9,6 +9,7 @@ app/database/*
 # thumbs/
 # vendor/
 # phpunit.xml
+css
 
 # Unless you want to store vendor's "state" in your Git repo.
 composer.phar
