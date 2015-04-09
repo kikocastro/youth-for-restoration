@@ -7,9 +7,7 @@
 	*/
 /* Basic */
 body, #skel-layers-wrapper {
-  background: #ffffff;
-  margin-top: 85px;
-}
+  background: #ffffff; }
 
 body.is-loading * {
   -moz-animation: none !important;
@@ -209,7 +207,7 @@ input[type="email"] {
       width: 100%; }
   .image.featured {
     display: block;
-    margin: 0 0 2em 0; }
+    margin: 85px 0 2em 0; }
     .image.featured img {
       display: block;
       width: 100%; }
