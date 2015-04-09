@@ -242,7 +242,7 @@ volunteer:
         who_may_become_volunteer:
             type: html
             height: 150px
-        liked_idea:
+        send_email:
             type: html
             height: 150px
     record_template: volunteer.twig
