@@ -414,8 +414,11 @@ input[type="reset"],
       opacity: 0.35;
       overflow: hidden;
       position: relative;
-      font-size: 140px;
-      line-height: 250px; }
+      font-size: 85px;
+      line-height: 160px; }
+      .wrapper.style2 .icon.big-icon {
+        font-size: 140px;
+        line-height: 250px; }
     .wrapper.style2 .button:hover {
       background: rgba(255, 255, 255, 0.15) !important; }
     .wrapper.style2 .button.special {

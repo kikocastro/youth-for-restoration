@@ -543,9 +543,15 @@ $pattern-background-size: 25em;
 				opacity: 0.35;
 				overflow: hidden;
 				position: relative;
-				font-size: 140px;
-				line-height: 250px;
+				font-size: 85px;
+				line-height: 160px;
+
+				&.big-icon {
+					font-size: 140px;
+					line-height: 250px;
+				}
 			}
+
 
 			.button {
 				&:hover {
