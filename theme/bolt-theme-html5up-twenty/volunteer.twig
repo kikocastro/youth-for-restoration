@@ -14,22 +14,13 @@
   <article id="main">
     <section class="wrapper style1 container special">
       <div class="row">
-        <div class="4u -1u">
+        <div class="6u -3u">
           <section>
             <header>
-              <span class="icon fa-home"></span>
-              <h2>About Us</h2>
+              <!-- <span class="icon fa-home"></span> -->
+              <h2>Become part of the team</h2>
             </header>
-            {{ record.about_us }}
-          </section>
-        </div>
-        <div class="4u -2u">
-          <section>
-            <header>
-              <span class="icon fa-globe"></span>
-              <h2>Our Mission</h2>
-            </header>
-            {{ record.our_mission }}
+            {{ record.become_part_team }}
           </section>
         </div>
       </div>
@@ -37,27 +28,56 @@
 
     <section class="wrapper style2 container special">
       <div class="row">
-        <div class="4u">
+        <div class="4u -1u +1u">
+          <span class="icon fa-check"></span>
           <header>
-            <h2>Founder</h2>
+            <h2>Restoration</h2>
           </header>
           <p>
-            {{ record.founder }}
+            {{ record.restoration }}
           </p>
         </div>
-        <div class="4u skel-cell-important">
-          <span class="icon fa-users"></span>
-        </div>
-        <div class="4u">
+        <div class="4u -1u +1u">
+          <span class="icon fa-check"></span>
           <header>
-            <h2>Board Members</h2>
+            <h2>Online YFR</h2>
           </header>
           <p>
-            {{ record.board }}
+            {{ record.online_yfr }}
           </p>
         </div>
       </div>
     </section>
+
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="6u -3u">
+          <section>
+            <header>
+              <!-- <span class="icon fa-home"></span> -->
+              <h2>Who may become a volunteer?</h2>
+            </header>
+            <p> 
+              {{ record.who_may_become_volunteer }}
+            </p>
+          </section>
+        </div>
+        <div class="6u -3u">
+          <section>
+            <header>
+              <!-- <span class="icon fa-home"></span> -->
+              <h2>Liked the idea? Join us!</h2>
+            </header>
+            <p>
+              {{ record.send_email }}
+            </p>
+            <a href="" class="button special">Send us an email</a>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
   </article>
 
 {% endblock main %}
