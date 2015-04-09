@@ -2,7 +2,7 @@
 app/cache/*
 # app/config/*.yml
 # app/config/extensions/
-app/database/*
+# app/database/*
 # *config.yml
 # files/*
 # extensions/*
