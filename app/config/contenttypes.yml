@@ -215,6 +215,42 @@ about_us:
     record_template: about-us.twig
     default_status: publish
 
+volunteer:
+    name: Volunteer
+    singular_name: Volunteer
+    info: Volunteer
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        become_part_team:
+            type: html
+            height: 150px
+        restoration:
+            type: html
+            height: 150px
+        online_yfr:
+            type: html
+            height: 150px
+        who_may_become_volunteer:
+            type: html
+            height: 150px
+        send_email:
+            type: html
+            height: 50px
+        image:
+            type: image
+            group: media
+    record_template: volunteer.twig
+    default_status: publish
+
+
+
+
 
 projects:
     name: Projects
