@@ -246,7 +246,7 @@ projects:
             type: imagelist
             label: "Gallery images"
             info: "Here you can add as many imges you want to this project gallery."
-    record_template: record.twig
+    record_template: project.twig
     listing_template: listing.twig
     listing_records: 10
     default_status: publish
