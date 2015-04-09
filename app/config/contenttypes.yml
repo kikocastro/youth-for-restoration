@@ -216,6 +216,43 @@ about_us:
     default_status: publish
 
 
+projects:
+    name: Projects
+    singular_name: Project
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+        file:
+            type: file
+            group: files
+            prefix: "<h4>Upload the presentation file for this project:</h4>"
+            info: "Upload the presentation file for this project"
+            label: "Presentation file"
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many imges you want to this project gallery."
+    record_template: record.twig
+    listing_template: listing.twig
+    listing_records: 10
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 10
+
 
 
 # possible field types:

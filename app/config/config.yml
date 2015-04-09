@@ -216,7 +216,7 @@ wysiwyg:
   images: true
   anchor: false
   tables: true
-  fontcolor: true
+  fontcolor: false
   align: true        # Add 'align left', 'align right',etc.
   subsuper: true     # Add buttons for subscript and superscript, using <sub> and <sup>
   embed: true        # allows the user to insert embedded video's from Youtube, Vimeo, etc.
