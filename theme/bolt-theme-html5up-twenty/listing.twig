@@ -1,9 +1,3 @@
-{#
----------------------------------------------------------------------------------------------------
-This is a generic listing page with pagination. By default, this one does not exist in the 
-HTML5UP version. So you might want to tweak this here and there.
----------------------------------------------------------------------------------------------------
-#}
 {% extends 'master.twig' %}
 
 {% block main %}
@@ -32,6 +26,11 @@ HTML5UP version. So you might want to tweak this here and there.
                             <h3>{{ item.title }}</h3>
                         </header>
                         {{ item.teaser }}
+                        <footer>
+                            <ul class="buttons vertical">
+                                <li><a href="{{ item.link }}" class="button small scrolly">Read More</a></li>
+                            </ul>
+                        </footer>
                     </section>
                 </div>
             {% if loop.index is even %}

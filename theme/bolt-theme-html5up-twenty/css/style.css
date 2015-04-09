@@ -94,22 +94,8 @@ header.major {
   padding-bottom: 2em; }
 header.special {
   margin-bottom: 5em;
-  padding-top: 7em;
   position: relative;
   text-align: center; }
-  header.special:before, header.special:after {
-    border-bottom: solid 1.5px;
-    border-top: solid 1.5px;
-    content: '';
-    height: 7px;
-    opacity: 0.1;
-    position: absolute;
-    top: 1.75em;
-    width: 43%; }
-  header.special:before {
-    left: 0; }
-  header.special:after {
-    right: 0; }
   header.special h2 {
     margin-bottom: 0; }
   header.special h2 + p {
@@ -207,7 +193,7 @@ input[type="email"] {
       width: 100%; }
   .image.featured {
     display: block;
-    margin: 85px 0 2em 0; }
+    margin: 85px 0 3em 0; }
     .image.featured img {
       display: block;
       width: 100%; }
@@ -401,7 +387,7 @@ input[type="reset"],
 
 /* Wrapper */
 .wrapper {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   padding: 3em; }
   .wrapper .button:hover {
     border-color: #48AFE3;
@@ -444,6 +430,8 @@ input[type="reset"],
     background: #fff;
     color: inherit;
     padding: 4em; }
+    .wrapper.style4 strong, .wrapper.style4 b {
+      font-size: 20px; }
 
 /* Header */
 @-moz-keyframes reveal-header {
@@ -682,7 +670,7 @@ input[type="reset"],
 /* Main */
 #main {
   background-size: 25em;
-  padding: 7em 0; }
+  padding: 85px 0; }
   #main a {
     color: #48AFE3; }
   #main > :last-child {

@@ -116,29 +116,8 @@ $pattern-background-size: 25em;
 
 		&.special {
 			margin-bottom: 5em;
-			padding-top: 7em;
 			position: relative;
 			text-align: center;
-
-			&:before,
-			&:after {
-				border-bottom: solid 1.5px;
-				border-top: solid 1.5px;
-				content: '';
-				height: 7px;
-				opacity: 0.1;
-				position: absolute;
-				top: 1.75em;
-				width: 43%;
-			}
-
-			&:before {
-				left: 0;
-			}
-
-			&:after {
-				right: 0;
-			}
 
 			h2 {
 				margin-bottom: 0;
@@ -171,6 +150,7 @@ $pattern-background-size: 25em;
 	}
 
 	footer {
+
 		> :last-child {
 			margin-bottom: 0;
 		}
@@ -260,7 +240,7 @@ $pattern-background-size: 25em;
 
 		&.featured {
 			display: block;
-			margin: 85px 0 2em 0;
+			margin: 85px 0 3em 0;
 
 			img {
 				display: block;
@@ -518,7 +498,7 @@ $pattern-background-size: 25em;
 	/* Wrapper */
 
 	.wrapper {
-		margin-bottom: 5em;
+		margin-bottom: 2em;
 		padding: 3em;
 
 		.button {
@@ -592,6 +572,10 @@ $pattern-background-size: 25em;
 			background: $color-two-bg;
 			color: $color-two-fg;
 			padding: 4em;
+
+			strong, b {
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -844,7 +828,7 @@ $pattern-background-size: 25em;
 
 	#main {
 		background-size: $pattern-background-size;
-		padding: 7em 0;
+		padding: 85px 0;
 
 		a {
 			color: $color-light-blue;
