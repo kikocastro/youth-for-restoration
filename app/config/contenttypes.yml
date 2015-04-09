@@ -230,9 +230,6 @@ volunteer:
         become_part_team:
             type: html
             height: 150px
-        our_mission:
-            type: html
-            height: 150px
         restoration:
             type: html
             height: 150px
@@ -244,7 +241,10 @@ volunteer:
             height: 150px
         send_email:
             type: html
-            height: 150px
+            height: 50px
+        image:
+            type: image
+            group: media
     record_template: volunteer.twig
     default_status: publish
 
