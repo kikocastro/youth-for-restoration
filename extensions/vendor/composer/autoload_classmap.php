@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Hybrid_Auth' => $vendorDir . '/bolt/clientlogin/lib/Hybrid/Auth.php',
+    'Hybrid_Endpoint' => $vendorDir . '/bolt/clientlogin/lib/Hybrid/Endpoint.php',
+    'Hybrid_User_Profile' => $vendorDir . '/bolt/clientlogin/lib/Hybrid/User_Profile.php',
 );

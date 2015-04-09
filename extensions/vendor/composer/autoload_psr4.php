@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Bolt\\Extension\\Bolt\\Members\\' => array($vendorDir . '/bolt/members', $vendorDir . '/bolt/members/src'),
+    'Bolt\\Extension\\Bolt\\ClientLogin\\' => array($vendorDir . '/bolt/clientlogin', $vendorDir . '/bolt/clientlogin/src'),
     'Bolt\\Composer\\' => array($baseDir . '/'),
 );

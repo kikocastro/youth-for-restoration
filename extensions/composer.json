@@ -28,6 +28,7 @@
         "post-package-update": "Bolt\\Composer\\ExtensionInstaller::handle"
     },
     "require": {
+        "bolt/members": "~2.1",
         "xiaohutai/bolt-theme-html5up-twenty": "0.2.*"
     }
 }
