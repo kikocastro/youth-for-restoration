@@ -253,6 +253,37 @@ projects:
     sort: -datepublish
     recordsperpage: 10
 
+blog:
+    name: Blog Posts
+    singular_name: Blog Post
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many imges you want to the gallery."
+    record_template: blogpost.twig
+    listing_template: listing.twig
+    listing_records: 10
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 10
+
 
 
 # possible field types:

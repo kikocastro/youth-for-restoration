@@ -1,0 +1,55 @@
+{% extends 'master.twig' %}
+
+{% block bodyclass %}
+    no-sidebar
+{% endblock bodyclass %}
+
+{% block main %}
+    <article id="main">
+
+        <section class="wrapper style4 container">
+            <header class="special">
+                <h2>{{ record.title }}</h2>
+            </header>
+            {% if record.image is not empty %}
+                <div class="image featured">
+                    <img src="{{ image(record.image) }}" alt="" />
+                </div>
+            {% endif %}
+            <div class="content">
+                <section>
+                    {{ record.body }}
+                </section>
+
+                {% if record.imagelist %}
+                    <section>
+                        <br/>
+                        <header class="special container">
+                            <h2>Gallery</h2>
+                        </header>
+                        <div>
+
+                            {% set list = record.imagelist %}
+
+                            {% for item in list %}
+                                <a href="{{ image(item.filename) }}">
+                                    <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </section>
+                {% endif %}
+            </div>
+        </section>
+
+        <section>
+            <header class="special container">
+                <h2>Latest blog posts</h2>
+            </header>
+            {% include('_row.twig') %}
+        </section>
+
+    </article>
+{% endblock main %}
+
+
