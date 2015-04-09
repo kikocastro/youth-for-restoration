@@ -11,18 +11,18 @@ $pattern-background-size: 25em;
 	Twenty by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
 
-/* Basic */
+	/* Basic */
 
 	body, #skel-layers-wrapper {
 		background: $color-bg;
 	}
 
-		body.is-loading * {
-			@include vendor-property('animation', 'none !important');
-			@include vendor-property('transition', 'none !important');
-		}
+	body.is-loading * {
+		@include vendor-property('animation', 'none !important');
+		@include vendor-property('transition', 'none !important');
+	}
 
 	body, input, select, textarea {
 		color: $color-fg;
@@ -101,7 +101,7 @@ $pattern-background-size: 25em;
 		padding: 1em 0 1em 2em;
 	}
 
-/* Section/Article */
+	/* Section/Article */
 
 	section, article {
 		&.special {
@@ -180,7 +180,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Form */
+	/* Form */
 
 	input[type="text"],
 	input[type="password"],
@@ -234,7 +234,7 @@ $pattern-background-size: 25em;
 		color: transparentize($color-fg, 0.5) !important;
 	}
 
-/* Image */
+	/* Image */
 
 	.image {
 		border: 0;
@@ -270,7 +270,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Icon */
+	/* Icon */
 
 	.icon {
 		@include icon;
@@ -340,7 +340,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* List */
+	/* List */
 
 	ol {
 		&.default {
@@ -429,7 +429,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Table */
+	/* Table */
 
 	table {
 		width: 100%;
@@ -466,7 +466,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Button */
+	/* Button */
 
 	input[type="button"],
 	input[type="submit"],
@@ -516,11 +516,11 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Wrapper */
+	/* Wrapper */
 
 	.wrapper {
 		margin-bottom: 5em;
-		padding: 5em;
+		padding: 3em;
 
 		.button {
 			&:hover {
@@ -532,6 +532,12 @@ $pattern-background-size: 25em;
 
 		&.style1 {
 			padding: 0;
+
+			.icon {
+				font-size: 57px;
+				bottom: 15px;
+				opacity: 0.25;
+			}
 		}
 
 		&.style2 {
@@ -540,9 +546,23 @@ $pattern-background-size: 25em;
 			// background-position: bottom left, bottom right;
 			// background-repeat: no-repeat, no-repeat;
 			// background-size: $pattern-background-size, $pattern-background-size;
-				color: $color-one-fg;
+			color: $color-one-fg;
+
 			h2 {
 				color: $color-one-fg;
+			}
+
+			.row {
+				padding-left: 0;
+			}
+
+			.icon {
+				cursor: default;
+				opacity: 0.35;
+				overflow: hidden;
+				position: relative;
+				font-size: 140px;
+				line-height: 250px;
 			}
 
 			.button {
@@ -575,7 +595,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Header */
+	/* Header */
 
 	@-moz-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 	@-webkit-keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
@@ -701,7 +721,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Dropotron */
+	/* Dropotron */
 
 	.dropotron {
 		background: #fff;
@@ -752,7 +772,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Banner */
+	/* Banner */
 
 	@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 	@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -820,7 +840,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Main */
+	/* Main */
 
 	#main {
 		background-size: $pattern-background-size;
@@ -853,7 +873,7 @@ $pattern-background-size: 25em;
 		padding-top: 5em;
 	}
 
-/* CTA */
+	/* CTA */
 
 	#cta {
 		background-attachment: scroll, fixed;
@@ -866,12 +886,18 @@ $pattern-background-size: 25em;
 		padding: 5em;
 		text-align: center;
 
+		margin-bottom: 7em;
+
+		h2 {
+			color: $color-three-fg;
+		}
+
 		header {
 			margin-bottom: 2em;
 		}
 	}
 
-/* Footer */
+	/* Footer */
 
 	#footer {
 		background: $color-footer-bg;
@@ -902,7 +928,7 @@ $pattern-background-size: 25em;
 		}
 	}
 
-/* Layer */
+	/* Layer */
 
 	#topButton {
 		.toggle {

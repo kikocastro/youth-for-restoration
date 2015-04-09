@@ -213,17 +213,17 @@ strict_variables: false
 # options are set to 'false'. If you choose to enable them for your editors, please
 # instruct them thoroughly on their responsibility not to break the layout.
 wysiwyg:
-  images: false
+  images: true
   anchor: false
-  tables: false
-  fontcolor: false
-  align: false        # Add 'align left', 'align right',etc.
-  subsuper: false     # Add buttons for subscript and superscript, using <sub> and <sup>
-  embed: false        # allows the user to insert embedded video's from Youtube, Vimeo, etc.
-  underline: false    # add a button to underline text, using the <u>-tag.
+  tables: true
+  fontcolor: true
+  align: true        # Add 'align left', 'align right',etc.
+  subsuper: true     # Add buttons for subscript and superscript, using <sub> and <sup>
+  embed: true        # allows the user to insert embedded video's from Youtube, Vimeo, etc.
+  underline: true    # add a button to underline text, using the <u>-tag.
   strike: false       # add a button to add stikethrough, using the <s>-tag.
-  blockquote: false
-  codesnippet: false
+  blockquote: true
+  codesnippet: true
   specialchar: false  # adds a button to insert special chars like '€' or '™'.
   ck:
     allowedContent: true # If set to 'true', any elements and attributes are allowed in Wysiwg Elements
