@@ -6,11 +6,11 @@
 {% endblock bodyclass %}
 
 {% block main %}
-
-  <div class="image featured">
-    <img src="{{ image(record.image) }}"/>
-  </div>
-
+  {% if record.image is not empty %}
+    <div class="image featured">
+      <img src="{{ image(record.image) }}"/>
+    </div>
+  {% endif %}
   <article id="main">
     <section class="wrapper style1 container special">
       <div class="row">

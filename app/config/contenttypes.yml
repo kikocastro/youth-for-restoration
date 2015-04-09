@@ -230,27 +230,27 @@ volunteer:
         become_part_team:
             type: html
             height: 150px
+            label: Become part of the team
         restoration:
             type: html
             height: 150px
         online_yfr:
             type: html
             height: 150px
+            label: Online YFR
         who_may_become_volunteer:
             type: html
             height: 150px
+            label: Who may become volunteer
         send_email:
             type: html
             height: 50px
+            label: Send email
         image:
             type: image
             group: media
     record_template: volunteer.twig
     default_status: publish
-
-
-
-
 
 projects:
     name: Projects
