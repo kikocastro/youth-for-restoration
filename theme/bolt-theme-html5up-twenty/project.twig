@@ -21,33 +21,34 @@
                     {{ record.body }}
                 </section>
 
-                    {% if record.imagelist %}
-                        <section>
-                            <br/>
-                            <header class="special container">
-                                <h2>Gallery</h2>
-                            </header>
-                            <div>
+                {% if record.imagelist %}
+                    <section>
+                        <br/>
+                        <header class="special container">
+                            <h2>Gallery</h2>
+                        </header>
+                        <div>
 
-                                {% set list = record.imagelist %}
+                            {% set list = record.imagelist %}
 
-                                {% for item in list %}
-                                    <a href="{{ image(item.filename) }}">
-                                        <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
-                                    </a>
-                                {% endfor %}
-                            </div>
-                        </section>
-                    {% endif %}
-
-                <footer>
-                    <div class="6u -3u">
-                        <br/><br/>
-                        <ul class="buttons vertical">
-                            <li><a href="{{ paths.files }}{{ record.file }}" class="button fit scrolly">Download the Presentation</a></li>
-                        </ul>
-                    </div>
-                </footer>
+                            {% for item in list %}
+                                <a href="{{ image(item.filename) }}">
+                                    <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
+                                </a>
+                            {% endfor %}
+                        </div>
+                    </section>
+                {% endif %}
+                {% if record.file is not empty %}
+                    <footer>
+                        <div class="6u -3u">
+                            <br/><br/>
+                            <ul class="buttons vertical">
+                                <li><a href="{{ paths.files }}{{ record.file }}" class="button fit scrolly">Download the Presentation</a></li>
+                            </ul>
+                        </div>
+                    </footer>
+                {% endif %}
             </div>
         </section>
 
