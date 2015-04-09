@@ -216,6 +216,40 @@ about_us:
     default_status: publish
 
 
+projects:
+    name: Projects
+    singular_name: Project
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+        file:
+            type: file
+            group: files
+        video:
+            type: video
+        imagelist:
+            type: imagelist
+    record_template: entry.twig
+    listing_template: listing.twig
+    listing_records: 10
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 10
+
 
 
 # possible field types:
