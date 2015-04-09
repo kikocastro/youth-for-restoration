@@ -7,17 +7,17 @@ main:
     path: homepage
     class: first
   - label: About Us
-    path: about-us/
+    path: about-us/1
   - label: Projects
     path: projects/
   - label: News
     path: news/
   - label: Volunteer
-    path: volunteer/
+    path: volunteer/1
   - label: donate
-    path: donate/
+    path: donate/1
   - label: blog
     path: blog/
   - label: Contact
-    link: contact/
+    link: contact/1
     class: last
