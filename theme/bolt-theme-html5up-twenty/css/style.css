@@ -4,7 +4,7 @@
 	Twenty by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
 /* Basic */
 body, #skel-layers-wrapper {
   background: #ffffff; }
@@ -403,18 +403,31 @@ input[type="reset"],
 /* Wrapper */
 .wrapper {
   margin-bottom: 5em;
-  padding: 5em; }
+  padding: 3em; }
   .wrapper .button:hover {
     border-color: #48AFE3;
     background: #48AFE3;
     color: #fff !important; }
   .wrapper.style1 {
     padding: 0; }
+    .wrapper.style1 .icon {
+      font-size: 57px;
+      bottom: 15px;
+      opacity: 0.25; }
   .wrapper.style2 {
     background-color: #48AFE3;
     color: #fff; }
     .wrapper.style2 h2 {
       color: #fff; }
+    .wrapper.style2 .row {
+      padding-left: 0; }
+    .wrapper.style2 .icon {
+      cursor: default;
+      opacity: 0.35;
+      overflow: hidden;
+      position: relative;
+      font-size: 140px;
+      line-height: 250px; }
     .wrapper.style2 .button:hover {
       background: rgba(255, 255, 255, 0.15) !important; }
     .wrapper.style2 .button.special {
@@ -696,7 +709,10 @@ body.index #main {
   background-size: auto, cover;
   color: #fff;
   padding: 5em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 7em; }
+  #cta h2 {
+    color: #fff; }
   #cta header {
     margin-bottom: 2em; }
 

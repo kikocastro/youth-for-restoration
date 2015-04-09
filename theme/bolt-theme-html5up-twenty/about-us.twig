@@ -1,0 +1,78 @@
+{% extends 'master.twig' %}
+
+{# TODO: fix class #}
+{% block bodyclass %}
+  index
+{% endblock bodyclass %}
+
+{% block main %}
+
+  <div class="image featured">
+    <img src="{{ image(record.image) }}"/>
+  </div>
+
+  <article id="main">
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="4u -1u">
+          <section>
+            <header>
+              <span class="icon fa-home"></span>
+              <h2>About Us</h2>
+            </header>
+            {{ record.about_us }}
+          </section>
+        </div>
+        <div class="4u -2u">
+          <section>
+            <header>
+              <span class="icon fa-globe"></span>
+              <h2>Our Mission</h2>
+            </header>
+            {{ record.our_mission }}
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper style2 container special">
+      <div class="row">
+        <div class="4u">
+          <header>
+            <h2>Founder</h2>
+          </header>
+          <p>
+            {{ record.founder }}
+          </p>
+        </div>
+        <div class="4u skel-cell-important">
+          <span class="icon fa-users"></span>
+        </div>
+        <div class="4u">
+          <header>
+            <h2>Board Members</h2>
+          </header>
+          <p>
+            {{ record.board }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+
+{% endblock main %}
+
+{% block cta %}
+  <section id="cta">
+    <header>
+      <h2>{{ record.cta_title }}</h2>
+      {{ record.cta_text }}
+    </header>
+    <footer>
+      <ul class="buttons">
+        <li><a href="" class="button special">Become a volunteer</a></li>
+        <li><a href="" class="button">Donate</a></li>
+      </ul>
+    </footer>
+  </section>
+{% endblock cta %}

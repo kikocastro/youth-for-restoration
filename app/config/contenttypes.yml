@@ -182,6 +182,41 @@ showcases:
     icon_many: "fa:cubes"
     icon_one: "fa:cube"
 
+about_us:
+    name: About Us
+    singular_name: About Us
+    info: About Us
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        about_us:
+            type: html
+            height: 150px
+        our_mission:
+            type: html
+            height: 150px
+        founder:
+            type: text
+        board:
+            type: html
+            height: 150px
+        cta_title:
+            type: text
+        cta_text:
+            type: text
+        image:
+            type: image
+            group: media
+    record_template: about-us.twig
+    default_status: publish
+
+
+
 
 # possible field types:
 # text - varchar(256) - input type text.
