@@ -239,11 +239,14 @@ projects:
         file:
             type: file
             group: files
-        video:
-            type: video
+            prefix: "<h4>Upload the presentation file for this project:</h4>"
+            info: "Upload the presentation file for this project"
+            label: "Presentation file"
         imagelist:
             type: imagelist
-    record_template: entry.twig
+            label: "Gallery images"
+            info: "Here you can add as many imges you want to this project gallery."
+    record_template: record.twig
     listing_template: listing.twig
     listing_records: 10
     default_status: publish
