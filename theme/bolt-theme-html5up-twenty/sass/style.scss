@@ -868,14 +868,14 @@ $pattern-background-size: 25em;
 	/* CTA */
 
 	#cta {
-		background-attachment: scroll, fixed;
+		background-attachment: fixed;
 		background-color: $color-three-bg;
-		background-image: url('images/overlay.png'), url('../images/banner.jpg');
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
+		background-image: url('../images/banner.jpg');
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		color: $color-three-fg;
-		padding: 5em;
+		padding: 3em;
 		text-align: center;
 
 		margin-bottom: 7em;
