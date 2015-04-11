@@ -320,10 +320,16 @@ blog:
     sort: -datepublish
     recordsperpage: 10
 
+<<<<<<< HEAD
 donate:
     name: Donate
     singular_name: Donate
     info: Donate
+=======
+contact:
+    name: Contact
+    singular_name: Contact
+>>>>>>> page-contact
     fields:
         title:
             type: text
@@ -331,6 +337,7 @@ donate:
             group: content
         slug:
             type: slug
+<<<<<<< HEAD
             uses: title
         ways_give:
             type: html
@@ -357,6 +364,27 @@ donate:
             group: media
     record_template: donate.twig
     default_status: publish
+=======
+            uses: [title]
+        body:
+            type: html
+            height: 300px
+        email:
+            type: text
+        telephone:
+            type: text
+        address:
+            type: text
+        geolocation:
+            type: geolocation
+        image:
+            type: image
+            group: media
+    record_template: contact.twig
+    default_status: publish
+
+
+>>>>>>> page-contact
 
 # possible field types:
 # text - varchar(256) - input type text.

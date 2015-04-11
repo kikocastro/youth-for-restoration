@@ -107,6 +107,25 @@ $pattern-background-size: 25em;
 		&.special {
 			text-align: center;
 		}
+
+		.contact-form {
+			padding-top: 70px;
+
+			ul {
+				text-align: left;
+			}
+
+			.icon {
+				color: $color-light-blue;
+				font-size: 31px !important;
+				top: 4px !important;
+				margin-right: 10px;
+			}
+
+			.fa-map-marker {
+					margin-left: 5px !important;
+			}
+		}
 	}
 
 	header {
@@ -512,10 +531,19 @@ $pattern-background-size: 25em;
 		&.style1 {
 			padding: 0;
 
+			.row {
+				margin-top: 40px;
+			}
+
 			.icon {
 				font-size: 57px;
 				bottom: 15px;
 				opacity: 0.25;
+				top: 10px;
+			}
+
+			header h2 {
+				margin-top: 40px;
 			}
 		}
 
@@ -525,8 +553,9 @@ $pattern-background-size: 25em;
 			// background-position: bottom left, bottom right;
 			// background-repeat: no-repeat, no-repeat;
 			// background-size: $pattern-background-size, $pattern-background-size;
-			margin-bottom: 4em;
-  			margin-top: 4em;
+
+			margin-bottom: 6em;
+			margin-top: 4em;
 			color: $color-one-fg;
 
 			h2 {
@@ -862,7 +891,7 @@ $pattern-background-size: 25em;
 	}
 
 	body.index #main {
-		padding-top: 4em;
+		padding-top: 1px;
 	}
 
 	/* CTA */
