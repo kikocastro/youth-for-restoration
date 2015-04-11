@@ -1034,3 +1034,50 @@ $pattern-background-size: 25em;
 		.indent-4 { display: inline-block; width: 4em; }
 		.indent-5 { display: inline-block; width: 5em; }
 	}
+
+	/* PHOTOSLIDER */
+	#slider1_container{
+		display: none;
+		position: relative;
+		margin: 0 auto;
+		top: 0px;
+		left: 0px;
+		width: 1300px;
+		height: 500px;
+		overflow: hidden;
+
+		#slides{
+			cursor: move;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 1300px;
+			height: 500px;
+			overflow: hidden;
+			.slide_title{
+				position:absolute;
+				width:480px;
+				height:120px;
+				top:30px;
+				left:30px;
+				padding:5px;
+				text-align:left;
+				line-height:60px;
+				text-transform:uppercase;
+				font-size:50px;
+				color:#FFFFFF;
+			}
+			.slide_desc{
+				position:absolute;
+				width:480px;
+				height:120px;
+				top:300px;
+				left:30px;
+				padding:5px;
+				text-align:left;
+				line-height:36px;
+				font-size:30px;
+				color:#FFFFFF;
+			}
+		}
+	}

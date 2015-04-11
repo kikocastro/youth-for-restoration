@@ -314,7 +314,7 @@ blog:
             label: "Gallery images"
             info: "Here you can add as many imges you want to the gallery."
     record_template: blogpost.twig
-    listing_template: listing.twig
+    listing_template: photoslider.twig
     listing_records: 10
     default_status: publish
     sort: -datepublish
@@ -332,6 +332,9 @@ photoslider:
         image:
             type: image
     listing_template: photoslider.twig
+    default_status: publish
+    sort: -datepublish
+    listing_records: 10
     record_template: blogpost.twig
 
 # possible field types:
