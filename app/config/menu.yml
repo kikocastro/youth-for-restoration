@@ -19,5 +19,5 @@ main:
   - label: blog
     path: blog/
   - label: Contact
-    link: contact/1
+    path: contact/1
     class: last

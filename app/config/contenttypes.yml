@@ -358,6 +358,35 @@ donate:
     record_template: donate.twig
     default_status: publish
 
+contact:
+    name: Contact
+    singular_name: Contact
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: [title]
+        body:
+            type: html
+            height: 300px
+        email:
+            type: text
+        telephone:
+            type: text
+        address:
+            type: text
+        geolocation:
+            type: geolocation
+        image:
+            type: image
+            group: media
+    record_template: contact.twig
+    default_status: publish
+
+
 # possible field types:
 # text - varchar(256) - input type text.
 # integer - integer - Input field for integer numbers.
