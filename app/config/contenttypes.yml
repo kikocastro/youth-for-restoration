@@ -326,6 +326,7 @@ photoslider:
     fields:
         title:
             type: text
+            group: content
         description:
             type: html
         image:
