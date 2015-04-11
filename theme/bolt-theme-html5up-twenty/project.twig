@@ -32,7 +32,7 @@
                             {% set list = record.imagelist %}
 
                             {% for item in list %}
-                                <a href="{{ image(item.filename) }}">
+                                <a href="{{ image(item.filename) }}" data-lightbox="projects">
                                     <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
                                 </a>
                             {% endfor %}
@@ -61,5 +61,3 @@
 
     </article>
 {% endblock main %}
-
-
