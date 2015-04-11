@@ -321,6 +321,18 @@ blog:
     recordsperpage: 10
 
 
+photoslider:
+    name: Photo Slider
+    singular_name: Photo Slider
+    fields:
+        title:
+            type: text
+        description:
+            type: html
+        image:
+            type: image
+    listing_template: photoslider.twig
+    record_template: blogpost.twig
 
 # possible field types:
 # text - varchar(256) - input type text.

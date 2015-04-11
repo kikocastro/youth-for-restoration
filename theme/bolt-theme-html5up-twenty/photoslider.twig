@@ -1,0 +1,26 @@
+{% extends 'master.twig' %}
+
+{% block main %}
+    <article id="main">
+        {{ dump(records)}}
+        {% for item in records %}
+          {{item.title}}
+          <div>
+              <img u="image" src2="{{ image(item.image) }}" />
+          </div>
+        {% endfor %}
+        <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. -->
+        <!-- ================================================== -->
+        <div id="slider1_container" style="display: none; position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                {% for item in records %}
+                  <div>
+                      <img u="image" src2="{{ image(item.image) }}" />
+                  </div>
+                {% endfor %}
+            </div>
+    </article>
+{% endblock main%}
