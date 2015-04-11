@@ -320,6 +320,22 @@ blog:
     sort: -datepublish
     recordsperpage: 10
 
+photoslider:
+    name: Photo Slider
+    singular_name: Photo Slider
+    fields:
+        title:
+            type: text
+        description:
+            type: html
+        image:
+            type: image
+    listing_template: photoslider.twig
+    default_status: publish
+    sort: -datepublish
+    listing_records: 10
+    record_template: blogpost.twig
+
 donate:
     name: Donate
     singular_name: Donate
