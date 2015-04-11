@@ -1,0 +1,86 @@
+{% extends 'master.twig' %}
+
+{# TODO: fix class #}
+{% block bodyclass %}
+  index
+{% endblock bodyclass %}
+
+{% block main %}
+
+  <div class="image featured">
+    <img src="{{ image(record.image) }}"/>
+  </div>
+
+  <article id="main">
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="6u -3u">
+          <section>
+            <!-- <p>
+              <span class="icon fa-users"></span>
+            </p> -->
+            <header>
+              <h2>Ways to give</h2>
+            </header>
+            {{ record.ways_give }}
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper style2 container special">
+      <div class="row">
+        <div class="4u -1u">
+          <span class="icon fa-check"></span>
+          <header>
+            <h2>Donate Online</h2>
+          </header>
+          <p>
+            {{ record.donate_online }}
+          </p>
+          <img src="../files/2015-04/paypal-donate-button.png" height="80%" width="80%" />
+        </div>
+        <div class="5u -2u">
+          <span class="icon fa-check"></span>
+          <header>
+            <h2>Donate by Mail</h2>
+          </header>
+          <p>
+            {{ record.donate_mail }}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="8u -2u">
+          <section>
+            <p>
+              {{ record.org_registration }}
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrapper style1 container special">
+      <div class="row">
+        <div class="8u -2u">
+          <section>
+            <header>
+              <h2>Become a sponsor</h2>
+            </header>
+            <p>
+              {{ record.become_sponsor }}
+            </p>
+            <a href="/contact/1" class="button special">Send us an email</a>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+  </article>
+
+{% endblock main %}
