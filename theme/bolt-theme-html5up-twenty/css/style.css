@@ -1141,4 +1141,32 @@ body:after {
   background-color: #48AFE3;
   color: #FFF !important; }
 
+/* news */
+.news h2, .news p {
+  text-align: left; }
+.news p, .news .image-list {
+  margin: 0 0 0 103px; }
+.news h2 {
+  margin-left: 80px;
+  margin-left: 100px;
+  padding-top: 20px; }
+.news .icon {
+  float: left;
+  font-size: 30px;
+  top: 11px;
+  background-color: #48AFE3; }
+.news a.icon {
+  color: #fff !important; }
+.news li {
+  margin-bottom: 50px; }
+.news .image-list {
+  text-align: left; }
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
 /*# sourceMappingURL=style.css.map */
