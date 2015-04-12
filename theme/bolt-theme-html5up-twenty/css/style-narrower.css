@@ -44,8 +44,17 @@ ul.buttons li {
   padding: 1em 0 0 0; }
 
 /* Header */
-#header {
+#header nav {
   display: none; }
+#header .logo {
+  float: left; }
+#header.alt {
+  background: #204460; }
+
+/* Photoslider */
+section#photoslider {
+  margin: 0;
+  padding-top: 80px; }
 
 /* Banner */
 #banner {
