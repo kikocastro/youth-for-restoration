@@ -8,7 +8,7 @@
                 <header>
                     <h2>Contact Us</h2>
                 </header>
-                <div class="row">
+                <div class="row contact-info">
                     <ul>
                         <li><span class="icon fa-envelope-square"></span>{{ contact.email }}</li>
                         <li><span class="icon fa-phone-square"></span>{{ contact.telephone }}</li>
@@ -16,20 +16,13 @@
                     </ul>
                 </div>
             </section>
+            <ul class="icons social-media-panel">
 
-            <ul class="icons">
-                {%- if theme.social.twitter.url is not empty %}
+                <li><a href="https://twitter.com/Y_F_R_" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
 
-                    <li><a href="{{ theme.social.twitter.url }}" class="icon circle fa-twitter"><span class="label">{{ theme.social.twitter.title|default('Twitter') }}</span></a></li>
-                {%- endif %}
-                {%- if theme.social.facebook.url is not empty %}
+                <li><a href="https://www.facebook.com/youthforrestoration" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
 
-                    <li><a href="{{ theme.social.facebook.url }}" class="icon circle fa-facebook"><span class="label">{{ theme.social.facebook.title|default('Facebook') }}</span></a></li>
-                {%- endif %}
-                {%- if theme.social.google.url is not empty %}
-
-                    <li><a href="{{ theme.social.google.url }}" class="icon circle fa-google-plus"><span class="label">{{ theme.social.google.title|default('Google+') }}</span></a></li>
-                {%- endif %}
+                <li><a href="https://plus.google.com/u/0/100370803337341607082/posts" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
             </ul>
         </div>
 
@@ -58,21 +51,14 @@
                 <header>
                     <h2>Social Media</h2>
                 </header>
-                <div class="row social-media-panel">
+                <div class="social-media-panel">
                     <ul>
                         <li><img src="{{ paths.theme }}images/tweeter-widget.png"></li>
                         <li><img src="{{ paths.theme }}images/facebook-widget.png"></li>
                     </ul>
-
-
                 </div>
             </section>
-
         </div>
-
-
-
-
     </div>
     <div class="copyright">
         Copyright &copy; {{ "now"|date('Y', timezone="America/New_York") }} by {{ app.config.get('general/sitename') }}. All rights reserved.
