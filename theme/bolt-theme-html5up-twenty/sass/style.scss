@@ -917,12 +917,59 @@ $pattern-background-size: 25em;
 	#footer {
 		background: $color-footer-bg;
 		color: $color-footer-fg;
-		padding: 5em 5em 10em 5em;
-		text-align: center;
+		padding: 4em 2em 1em 2em;
+		text-align: left;
+
+		h2 {
+			color: $color-one-fg;
+		}
+
+		.icon {
+			margin-right: 11px;
+
+			&.fa-map-marker {
+				left: 3px;
+			}
+		}
+
+		ul {
+			font-size: 16px;
+		}
+
+		.latest-entries {
+			h4 {
+				color: $color-one-fg;
+				text-transform: none;
+				background-color: rgba(255, 255, 255, 0.1);
+			  padding-left: 24px;
+			  padding-right: 10px;
+			  border-radius: 0 20px;
+			}
+
+			a {
+				color: $color-one-fg;
+
+				&:hover {
+					color: $color-light-blue;
+
+					h4 {
+						background-color: $color-light-blue;
+					}
+				}
+			}
+
+			p {
+				margin: 0 0 20px 0;
+				font-size: 16px;
+				line-height: 23px;
+
+			}
+		}
 
 		.copyright {
-			font-size: 0.8em;
-			line-height: 1em;
+			font-size: 0.7em;
+			line-height: 3em;
+			text-align: center;
 
 			a {
 				color: inherit;

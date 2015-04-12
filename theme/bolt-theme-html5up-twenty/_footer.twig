@@ -1,0 +1,75 @@
+ <footer id="footer">
+
+    <div class="row">
+        {% setcontent contact = "contact/1" %}
+        <div class="3u">
+
+            <section>
+                <header>
+                    <h2>Contact Us</h2>
+                </header>
+                <div class="row">
+                    <ul>
+                        <li><span class="icon fa-envelope-square"></span>{{ contact.email }}</li>
+                        <li><span class="icon fa-phone-square"></span>{{ contact.telephone }}</li>
+                        <li><span class="icon fa-map-marker"></span>&nbsp;&nbsp;{{ contact.address }}</li>
+                    </ul>
+                </div>
+            </section>
+
+            <ul class="icons">
+                {%- if theme.social.twitter.url is not empty %}
+
+                    <li><a href="{{ theme.social.twitter.url }}" class="icon circle fa-twitter"><span class="label">{{ theme.social.twitter.title|default('Twitter') }}</span></a></li>
+                {%- endif %}
+                {%- if theme.social.facebook.url is not empty %}
+
+                    <li><a href="{{ theme.social.facebook.url }}" class="icon circle fa-facebook"><span class="label">{{ theme.social.facebook.title|default('Facebook') }}</span></a></li>
+                {%- endif %}
+                {%- if theme.social.google.url is not empty %}
+
+                    <li><a href="{{ theme.social.google.url }}" class="icon circle fa-google-plus"><span class="label">{{ theme.social.google.title|default('Google+') }}</span></a></li>
+                {%- endif %}
+            </ul>
+        </div>
+
+        {% setcontent r1 = "projects/latest/4" orderby '-datepublish' allowpaging %}
+        {% setcontent r2 = "blog/latest/4" orderby '-datepublish' allowpaging %}
+        {% set records = r1|merge(r2)|order('-datepublish')|slice(0,4) %}
+
+        <div class="5u latest-entries">
+            <section>
+                <header>
+                    <h2>Latest Entries</h2>
+                </header>
+                <div class="row">
+                    {% for record in records %}
+                        <a href="{{record.link}}">
+                           <h4> [ {{ record.datepublish |date("m/d") }} ] &nbsp; {{ record.title }}</h4>
+                           <p>{{ record.excerpt(120) }}</p>
+                        </a>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+
+        <div class="3u">
+            <section>
+                <header>
+                    <h2>Social Media</h2>
+                </header>
+                <div class="row">
+
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="copyright">
+        Copyright &copy; {{ "now"|date('Y', timezone="America/New_York") }} by {{ app.config.get('general/sitename') }}. All rights reserved.
+    </div>
+</footer>

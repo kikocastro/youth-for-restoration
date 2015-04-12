@@ -21,7 +21,7 @@ theme: bolt-theme-html5up-twenty
 # to get everything to work as desired. This can be done as [nl_NL, Dutch_Netherlands]
 # When specifying multiple locale, make sure the first is a standard locale
 locale: en_US
-timezone: EST
+timezone: America/New_York
 
 # Set maintenance mode true or false
 # While in maintenance mode, only users of level editor or higher can access the site.

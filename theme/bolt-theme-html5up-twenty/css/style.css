@@ -725,11 +725,37 @@ body.index #main {
 #footer {
   background: #204460;
   color: #ffffff;
-  padding: 5em 5em 10em 5em;
-  text-align: center; }
+  padding: 4em 2em 1em 2em;
+  text-align: left; }
+  #footer h2 {
+    color: #fff; }
+  #footer .icon {
+    margin-right: 11px; }
+    #footer .icon.fa-map-marker {
+      left: 3px; }
+  #footer ul {
+    font-size: 16px; }
+  #footer .latest-entries h4 {
+    color: #fff;
+    text-transform: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 24px;
+    padding-right: 10px;
+    border-radius: 0 20px; }
+  #footer .latest-entries a {
+    color: #fff; }
+    #footer .latest-entries a:hover {
+      color: #48AFE3; }
+      #footer .latest-entries a:hover h4 {
+        background-color: #48AFE3; }
+  #footer .latest-entries p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 23px; }
   #footer .copyright {
-    font-size: 0.8em;
-    line-height: 1em; }
+    font-size: 0.7em;
+    line-height: 3em;
+    text-align: center; }
     #footer .copyright a {
       color: inherit; }
     #footer .copyright li {

@@ -79,40 +79,9 @@
         {% block cta %}
         {% endblock cta %}
 
-            <footer id="footer">
-                {% block footer %}
-
-                <ul class="icons">
-                    {%- if theme.social.twitter.url is not empty %}
-
-                    <li><a href="{{ theme.social.twitter.url }}" class="icon circle fa-twitter"><span class="label">{{ theme.social.twitter.title|default('Twitter') }}</span></a></li>
-                    {%- endif %}
-                    {%- if theme.social.facebook.url is not empty %}
-
-                    <li><a href="{{ theme.social.facebook.url }}" class="icon circle fa-facebook"><span class="label">{{ theme.social.facebook.title|default('Facebook') }}</span></a></li>
-                    {%- endif %}
-                    {%- if theme.social.google.url is not empty %}
-
-                    <li><a href="{{ theme.social.google.url }}" class="icon circle fa-google-plus"><span class="label">{{ theme.social.google.title|default('Google+') }}</span></a></li>
-                    {%- endif %}
-                    {%- if theme.social.github.url is not empty %}
-
-                    <li><a href="{{ theme.social.github.url }}" class="icon circle fa-github"><span class="label">{{ theme.social.github.title|default('Github') }}</span></a></li>
-                    {%- endif %}
-                    {%- if theme.social.dribbble.url is not empty %}
-
-                    <li><a href="{{ theme.social.dribbble.url }}" class="icon circle fa-dribbble"><span class="label">{{ theme.social.dribbble.title|default('Dribbble') }}</span></a></li>
-                    {%- endif %}
-
-                </ul>
-
-                <ul class="copyright">
-                    <li>{{ theme.copyright }}</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-                {% endblock footer %}
-
-            </footer>
+        {% block footer %}
+            {% include('_footer.twig') %}
+        {% endblock footer %}
 
     </body>
 </html>
