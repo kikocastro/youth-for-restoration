@@ -16,6 +16,7 @@
                     </ul>
                 </div>
             </section>
+            <br/>
             <ul class="icons social-media-panel">
 
                 <li><a href="https://twitter.com/Y_F_R_" class="icon circle fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
@@ -26,8 +27,8 @@
             </ul>
         </div>
 
-        {% setcontent r1 = "projects/latest/4" orderby '-datepublish' allowpaging %}
-        {% setcontent r2 = "blog/latest/4" orderby '-datepublish' allowpaging %}
+        {% setcontent r1 = "projects/latest/4" orderby '-datepublish'  %}
+        {% setcontent r2 = "blog/latest/4" orderby '-datepublish'  %}
         {% set records = r1|merge(r2)|order('-datepublish')|slice(0,4) %}
 
         <div class="4u latest-entries">
@@ -38,7 +39,7 @@
                 <div class="row">
                     {% for record in records %}
                         <a href="{{record.link}}">
-                           <h4> [ {{ record.datepublish |date("m/d") }} ] &nbsp; {{ record.title }}</h4>
+                           <h4> [ {{ record.datepublish | date("m/d") }} ] &nbsp; {{ record.title }}</h4>
                            <p>{{ record.excerpt(100) }}</p>
                         </a>
                     {% endfor %}
@@ -54,6 +55,7 @@
                 <div class="social-media-panel">
                     <ul>
                         <li><img src="{{ paths.theme }}images/tweeter-widget.png"></li>
+                        <li><br/></li>
                         <li><img src="{{ paths.theme }}images/facebook-widget.png"></li>
                     </ul>
                 </div>

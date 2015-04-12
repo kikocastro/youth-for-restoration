@@ -41,13 +41,30 @@
                 {% endif %}
             </div>
         </section>
-
-        <section>
+        {% setcontent items = "blog/latest/3" %}
+        {% if  items | length > 1 %}
+        <section class="wrapper style1 container special">
             <header class="special container">
                 <h2>Latest blog posts</h2>
             </header>
-            {% include('_row.twig') %}
+            <div class="row">
+                {% for item in items %}
+                <div class="4u">
+                    <section>
+                        <header>
+                            <h3>{{ item.title }}</h3>
+                        </header>
+                        {{ item.teaser }}
+                        <footer>
+                            <ul class="buttons">
+                                <li><a href="{{ item.link }}" class="button small">Read More</a></li>
+                            </ul>
+                        </footer>
+                    </section>
+                </div>
+                {% endfor %}
+            </div>
         </section>
-
+        {% endif %}
     </article>
 {% endblock main %}
