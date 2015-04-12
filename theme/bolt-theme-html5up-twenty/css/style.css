@@ -923,10 +923,12 @@ body.index #main {
       width: 480px;
       top: 150px;
       left: 100px;
-      padding: 475px 0px 0px 100px; }
+      padding: 475px 0px 0px 100px;
+      padding-right: 90px; }
       #slider1_container #slides .slide-textbox .slide_title {
         position: relative;
         height: auto;
+        bottom: 50px;
         text-align: left;
         line-height: 60px;
         font-weight: bold;
@@ -940,6 +942,7 @@ body.index #main {
         line-height: 36px;
         font-size: 30px;
         color: #FFFFFF;
+        bottom: 50px;
         font-weight: 400;
         padding-top: 15px;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.6); }
