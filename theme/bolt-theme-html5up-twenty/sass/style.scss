@@ -1388,3 +1388,13 @@ $pattern-background-size: 25em;
 		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 		opacity: 1;
 	}
+
+/* pagination */
+
+.pagination .button {
+    min-width: initial;
+}
+.pagination .active .button {
+    background-color: $color-light-blue;
+    color: #FFF !important;
+}

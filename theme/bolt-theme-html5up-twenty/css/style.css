@@ -1133,4 +1133,12 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1; }
 
+/* pagination */
+.pagination .button {
+  min-width: initial; }
+
+.pagination .active .button {
+  background-color: #48AFE3;
+  color: #FFF !important; }
+
 /*# sourceMappingURL=style.css.map */
