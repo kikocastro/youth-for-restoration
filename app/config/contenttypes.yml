@@ -433,9 +433,11 @@ contact:
     record_template: contact.twig
     default_status: publish
 
-vonlunteer_info:
-    name: Vonlunteers info
-    singular_name: Volunteer info
+volunteer_info:
+    name: Volunteers List
+    slug: volunteers-list
+    singular_name: Volunteer
+    singular_slug: volunteer-worker
     fields:
         name:
             type: text
@@ -476,11 +478,14 @@ vonlunteer_info:
         photo:
             type: image
             group: media
-    record_template: not-found.twig
+    default_status: published
+    show_on_dashboard: false
+    searchable: false
+    viewless: true
 
-soponsor_info:
-    name: Sponsors info
-    singular_name: Sponsor info
+sponsor_info:
+    name: Sponsors List
+    singular_name: Sponsor
     fields:
         name:
             type: text
@@ -521,7 +526,10 @@ soponsor_info:
         photo:
             type: image
             group: media
-    record_template: not-found.twig
+    default_status: published
+    show_on_dashboard: false
+    searchable: false
+    viewless: true
 
 
 
