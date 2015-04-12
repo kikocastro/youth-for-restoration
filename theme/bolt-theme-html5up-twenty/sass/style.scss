@@ -101,6 +101,10 @@ $pattern-background-size: 25em;
 		padding: 1em 0 1em 2em;
 	}
 
+	.pull-right {
+		 float:right !important;
+	}
+
 	/* Section/Article */
 
 	section, article {
@@ -113,13 +117,17 @@ $pattern-background-size: 25em;
 
 			ul {
 				text-align: left;
+
+				li {
+					line-height: 40px;
+				}
 			}
 
 			.icon {
 				color: $color-light-blue;
 				font-size: 31px !important;
 				top: 4px !important;
-				margin-right: 10px;
+				margin-right: 16px;
 			}
 
 			.fa-map-marker {

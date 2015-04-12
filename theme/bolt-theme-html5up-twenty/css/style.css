@@ -86,6 +86,9 @@ blockquote {
   font-style: italic;
   padding: 1em 0 1em 2em; }
 
+.pull-right {
+  float: right !important; }
+
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
@@ -93,11 +96,13 @@ section .contact-form, article .contact-form {
   padding-top: 70px; }
   section .contact-form ul, article .contact-form ul {
     text-align: left; }
+    section .contact-form ul li, article .contact-form ul li {
+      line-height: 40px; }
   section .contact-form .icon, article .contact-form .icon {
     color: #48AFE3;
     font-size: 31px !important;
     top: 4px !important;
-    margin-right: 10px; }
+    margin-right: 16px; }
   section .contact-form .fa-map-marker, article .contact-form .fa-map-marker {
     margin-left: 5px !important; }
 
