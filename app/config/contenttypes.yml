@@ -433,6 +433,99 @@ contact:
     record_template: contact.twig
     default_status: publish
 
+vonlunteer_info:
+    name: Vonlunteers info
+    singular_name: Volunteer info
+    fields:
+        name:
+            type: text
+            group: info
+            required: true
+        email:
+            type: text
+            group: info
+            required: true
+            pattern: email
+        phone:
+            type: text
+            group: info
+        address1:
+            type: text
+            required: true
+            group: info
+            label: Address line 1
+        address2:
+            type: text
+            group: info
+            label: Address line 2
+        city:
+            type: text
+            required: true
+            group: info
+        state:
+            type: text
+            required: true
+            group: info
+        zip:
+            type: text
+            required: true
+            group: info
+        description:
+            type: html
+            group: info
+        photo:
+            type: image
+            group: media
+    record_template: not-found.twig
+
+soponsor_info:
+    name: Sponsors info
+    singular_name: Sponsor info
+    fields:
+        name:
+            type: text
+            group: info
+            required: true
+        email:
+            type: text
+            group: info
+            required: true
+            pattern: email
+        phone:
+            type: text
+            group: info
+        address1:
+            type: text
+            required: true
+            group: info
+            label: Address line 1
+        address2:
+            type: text
+            group: info
+            label: Address line 2
+        city:
+            type: text
+            required: true
+            group: info
+        state:
+            type: text
+            required: true
+            group: info
+        zip:
+            type: text
+            required: true
+            group: info
+        description:
+            type: html
+            group: info
+        photo:
+            type: image
+            group: media
+    record_template: not-found.twig
+
+
+
+
 
 # possible field types:
 # text - varchar(256) - input type text.
