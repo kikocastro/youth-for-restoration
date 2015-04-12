@@ -315,7 +315,7 @@ blog:
             info: "Here you can add as many images you want to the gallery."
     record_template: blogpost.twig
     listing_template: listing.twig
-    listing_records: 3
+    listing_records: 10
     default_status: publish
     sort: -datepublish
     recordsperpage: 10
