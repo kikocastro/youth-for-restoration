@@ -1,0 +1,56 @@
+{% extends 'master.twig' %}
+
+{% block main %}
+    <article id="main">
+        <section class="wrapper style3 container special">
+
+            <header class="major">
+                {% if taxonomytype is defined %}
+                    <h2>Latest <strong>{% if taxonomy.options[slug] is defined %}{{ taxonomy.options[slug] }}{% else %}{{ slug }}{% endif %}</strong></h2>
+                    {% elseif search is defined %}
+                    <h2>{{ __('Search results for <strong> %search% </strong>', { '%search%': search|escape }) }}</h2>
+                    {% else %}
+                    <h2>Latest <strong>{{ records|first.contenttype.name }}</strong></h2>
+                {% endif %}
+            </header>
+
+            <section>
+                <div class="row news">
+                    <ul>
+                        {% for item in records %}
+                            <li>
+                                <a href="{{ item.link_to_news }}" class="icon circle fa-newspaper-o" target="_blank"></a>
+                                <header>
+                                    <h2>{{ item.title }}</h2>
+                                </header>
+                                <div class="clearfix"></div>
+                                {{ item.body }}
+                                <br/>
+                                <p><a href="{{ item.link_to_news }}">View link</a> </p>
+                                <footer>
+                                    {% if item.imagelist %}
+                                        <section>
+                                            <br/>
+                                            <div class="image-list">
+                                                {% set list = item.imagelist %}
+                                                    {% for item in list %}
+                                                        <a href="{{ image(item.filename) }}" data-lightbox="blogpost">
+                                                            <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}" target="_blank">
+                                                        </a>
+                                                    {% endfor %}
+                                                </div>
+                                            </section>
+                                        {% endif %}
+                                    </footer>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+                </section>
+
+                {{ pager('', 3, '_pagination.twig' ) }}
+
+            </section>
+        </article>
+        {% endblock main%}
