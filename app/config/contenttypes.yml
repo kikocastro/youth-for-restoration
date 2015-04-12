@@ -197,9 +197,11 @@ about_us:
         about_us:
             type: html
             height: 150px
+            label: About Us
         our_mission:
             type: html
             height: 150px
+            label: Our Mission
         founder:
             type: text
         board:
@@ -207,8 +209,10 @@ about_us:
             height: 150px
         cta_title:
             type: text
+            label: Heading
         cta_text:
             type: text
+            label: Text
         image:
             type: image
             group: media
