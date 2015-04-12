@@ -513,7 +513,6 @@ input[type="reset"],
         color: inherit;
         display: inline-block;
         line-height: 1em;
-        padding: 0.6em 0.75em;
         text-decoration: none; }
       #header nav ul li input[type="button"],
       #header nav ul li input[type="submit"],
@@ -555,13 +554,10 @@ input[type="reset"],
     -o-animation: none;
     -ms-animation: none;
     animation: none;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5);
     box-shadow: none;
     color: #fff;
-    padding: 1em 1.5em;
     position: absolute; }
-    #header.alt img {
-      width: 150px; }
     #header.alt nav {
       right: 2.5em;
       top: 2em; }
@@ -877,7 +873,7 @@ body.index #main {
   top: 0px;
   left: 0px;
   width: 1300px;
-  height: 500px;
+  height: 800px;
   overflow: hidden; }
   #slider1_container #slides {
     cursor: move;
@@ -885,7 +881,7 @@ body.index #main {
     left: 0px;
     top: 0px;
     width: 1300px;
-    height: 500px;
+    height: 800px;
     overflow: hidden; }
     #slider1_container #slides .slide_title {
       position: absolute;

@@ -667,7 +667,6 @@ $pattern-background-size: 25em;
 						color: inherit;
 						display: inline-block;
 						line-height: 1em;
-						padding: 0.6em 0.75em;
 						text-decoration: none;
 					}
 
@@ -717,12 +716,7 @@ $pattern-background-size: 25em;
 			background: $color-header-alt-bg;
 			box-shadow: none;
 			color: $color-header-alt-fg;
-			padding: 1em 1.5em;
 			position: absolute;
-
-			img {
-				width: 150px;
-			}
 
 			nav {
 				right: 2.5em;
@@ -1072,7 +1066,7 @@ $pattern-background-size: 25em;
 		top: 0px;
 		left: 0px;
 		width: 1300px;
-		height: 500px;
+		height: 800px;
 		overflow: hidden;
 
 		#slides{
@@ -1081,7 +1075,7 @@ $pattern-background-size: 25em;
 			left: 0px;
 			top: 0px;
 			width: 1300px;
-			height: 500px;
+			height: 800px;
 			overflow: hidden;
 			.slide_title{
 				position:absolute;
