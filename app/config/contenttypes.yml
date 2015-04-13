@@ -41,18 +41,21 @@ projects:
             type: text
             class: large
             group: content
+            required: true
         slug:
             type: slug
             uses: title
         teaser:
             type: html
             height: 150px
+            required: true
         body:
             type: html
             height: 300px
         image:
             type: image
             group: media
+            required: true
         imagelist:
             type: imagelist
             label: "Gallery images"
@@ -178,18 +181,21 @@ blog:
             type: text
             class: large
             group: content
+            required: true
         slug:
             type: slug
             uses: title
         teaser:
             type: html
             height: 150px
+            required: true
         body:
             type: html
             height: 300px
         image:
             type: image
             group: media
+            required: true
         imagelist:
             type: imagelist
             label: "Gallery images"
