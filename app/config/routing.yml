@@ -5,6 +5,25 @@
 # ------------------------------------------------------------------------------
 # Place your own routes here, that have a HIGHER priority than the default routes.
 
+aboutusbinding:
+ path: /about-us
+ defaults: { _controller: 'Bolt\Controllers\Frontend::record', 'contenttypeslug': 'about-us', 'slug': 'about-us' }
+ recordslug: page/about-us
+
+volunteerbinding:
+ path: /volunteer
+ defaults: { _controller: 'Bolt\Controllers\Frontend::record', 'contenttypeslug': 'volunteer', 'slug': 'volunteer' }
+ recordslug: page/volunteer
+
+donatebinding:
+ path: /donate
+ defaults: { _controller: 'Bolt\Controllers\Frontend::record', 'contenttypeslug': 'donate', 'slug': 'donate' }
+ recordslug: page/donate
+
+contactbinding:
+ path: /contact
+ defaults: { _controller: 'Bolt\Controllers\Frontend::record', 'contenttypeslug': 'contact', 'slug': 'contact' }
+ recordslug: page/contact
 
 
 # ------------------------------------------------------------------------------
