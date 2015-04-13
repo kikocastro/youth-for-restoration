@@ -41,18 +41,21 @@ projects:
             type: text
             class: large
             group: content
+            required: true
         slug:
             type: slug
             uses: title
         teaser:
             type: html
             height: 150px
+            required: true
         body:
             type: html
             height: 300px
         image:
             type: image
             group: media
+            required: true
         imagelist:
             type: imagelist
             label: "Gallery images"
@@ -65,10 +68,10 @@ projects:
             label: "Presentation file"
     record_template: project.twig
     listing_template: listing.twig
-    listing_records: 10
+    listing_records: 8
     default_status: publish
     sort: -datepublish
-    recordsperpage: 10
+    recordsperpage: 8
 
 news:
     name: News
@@ -93,10 +96,10 @@ news:
             group: media
     record_template: blogpost.twig
     listing_template: news-listing.twig
-    listing_records: 10
+    listing_records: 8
     default_status: publish
     sort: -datepublish
-    recordsperpage: 10
+    recordsperpage: 8
     show_on_dashboard: false
 
 volunteer:
@@ -171,35 +174,38 @@ donate:
     show_on_dashboard: false
 
 blog:
-    name: Blog
+    name: Blog Posts
     singular_name: Blog Post
     fields:
         title:
             type: text
             class: large
             group: content
+            required: true
         slug:
             type: slug
             uses: title
         teaser:
             type: html
             height: 150px
+            required: true
         body:
             type: html
             height: 300px
         image:
             type: image
             group: media
+            required: true
         imagelist:
             type: imagelist
             label: "Gallery images"
             info: "Here you can add as many images as you want to the gallery."
     record_template: blogpost.twig
     listing_template: listing.twig
-    listing_records: 10
+    listing_records: 8
     default_status: publish
     sort: -datepublish
-    recordsperpage: 10
+    recordsperpage: 8
 
 contact:
     name: Contact
@@ -241,7 +247,7 @@ photoslider:
     viewless: true
     default_status: publish
     sort: -datepublish
-    listing_records: 10
+    listing_records: 8
     show_on_dashboard: false
 
 volunteer_info:

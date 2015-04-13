@@ -1124,24 +1124,7 @@ $pattern-background-size: 25em;
 
 	/* PHOTOSLIDER */
 	#slider1_container{
-		display: none;
-		position: relative;
-		margin: 0 auto;
-		top: 0px;
-		left: 0px;
-		width: 1300px;
-		height: 731px;
-		overflow: hidden;
-
 		#slides{
-			cursor: move;
-			position: absolute;
-			left: 0px;
-			top: 0px;
-			width: 1300px;
-			height: 800px;
-			overflow: hidden;
-
 			.slide-textbox {
 				position:absolute;
 				width:480px;
@@ -1176,6 +1159,11 @@ $pattern-background-size: 25em;
 			}
 		}
 	}
+
+	/*#slider1_container{
+		display: none; position: relative; margin: 0 auto;
+				top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;
+	}*/
 
 	/*-------------- LIGHTBOX --------------------*/
 	/* Preload images */
