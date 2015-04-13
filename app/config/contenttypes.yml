@@ -53,16 +53,16 @@ projects:
         image:
             type: image
             group: media
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many images you want to this project gallery."
         file:
             type: file
             group: files
             prefix: "<h4>Upload the presentation file for this project:</h4>"
             info: "Upload the presentation file for this project"
             label: "Presentation file"
-        imagelist:
-            type: imagelist
-            label: "Gallery images"
-            info: "Here you can add as many images you want to this project gallery."
     record_template: project.twig
     listing_template: listing.twig
     listing_records: 10
@@ -90,6 +90,7 @@ news:
             type: imagelist
             label: "Images"
             info: "Here you can add as many images as you want."
+            group: media
     record_template: blogpost.twig
     listing_template: news-listing.twig
     listing_records: 10
