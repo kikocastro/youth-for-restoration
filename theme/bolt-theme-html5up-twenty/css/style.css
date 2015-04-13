@@ -901,52 +901,39 @@ body.index #main {
     width: 5em; }
 
 /* PHOTOSLIDER */
-#slider1_container {
-  display: none;
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  left: 0px;
-  width: 1300px;
-  height: 731px;
-  overflow: hidden; }
-  #slider1_container #slides {
-    cursor: move;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1300px;
-    height: 800px;
-    overflow: hidden; }
-    #slider1_container #slides .slide-textbox {
-      position: absolute;
-      width: 480px;
-      top: 150px;
-      left: 100px;
-      padding: 475px 0px 0px 100px;
-      padding-right: 90px; }
-      #slider1_container #slides .slide-textbox .slide_title {
-        position: relative;
-        height: auto;
-        bottom: 50px;
-        text-align: left;
-        line-height: 60px;
-        font-weight: bold;
-        font-size: 50px;
-        color: #FFFFFF;
-        text-shadow: 3px 3px rgba(0, 0, 0, 0.5); }
-      #slider1_container #slides .slide-textbox .slide_desc {
-        position: relative;
-        height: auto;
-        text-align: left;
-        line-height: 36px;
-        font-size: 30px;
-        color: #FFFFFF;
-        bottom: 50px;
-        font-weight: 400;
-        padding-top: 15px;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.6); }
+#slider1_container #slides .slide-textbox {
+  position: absolute;
+  width: 480px;
+  top: 150px;
+  left: 100px;
+  padding: 475px 0px 0px 100px;
+  padding-right: 90px; }
+  #slider1_container #slides .slide-textbox .slide_title {
+    position: relative;
+    height: auto;
+    bottom: 50px;
+    text-align: left;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5); }
+  #slider1_container #slides .slide-textbox .slide_desc {
+    position: relative;
+    height: auto;
+    text-align: left;
+    line-height: 36px;
+    font-size: 30px;
+    color: #FFFFFF;
+    bottom: 50px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6); }
 
+/*#slider1_container{
+	display: none; position: relative; margin: 0 auto;
+			top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;
+}*/
 /*-------------- LIGHTBOX --------------------*/
 /* Preload images */
 body:after {
