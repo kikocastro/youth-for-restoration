@@ -312,7 +312,6 @@ sponsor_info:
             group: info
         address1:
             type: text
-            required: true
             group: info
             label: Address line 1
         address2:
@@ -321,15 +320,12 @@ sponsor_info:
             label: Address line 2
         city:
             type: text
-            required: true
             group: info
         state:
             type: text
-            required: true
             group: info
         zip:
             type: text
-            required: true
             group: info
         description:
             type: html
