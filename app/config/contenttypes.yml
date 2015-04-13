@@ -174,7 +174,7 @@ donate:
     show_on_dashboard: false
 
 blog:
-    name: Blog
+    name: Blog Posts
     singular_name: Blog Post
     fields:
         title:
