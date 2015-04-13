@@ -33,41 +33,6 @@ about_us:
     default_status: publish
     show_on_dashboard: false
 
-volunteer:
-    name: Volunteer
-    singular_name: Volunteer
-    info: Volunteer
-    fields:
-        title:
-            type: text
-            class: large
-            group: content
-        become_part_team:
-            type: html
-            height: 150px
-            label: Become part of the team
-        restoration:
-            type: html
-            height: 150px
-        online_yfr:
-            type: html
-            height: 150px
-            label: Online YFR
-        who_may_become_volunteer:
-            type: html
-            height: 150px
-            label: Who may become volunteer
-        send_email:
-            type: html
-            height: 50px
-            label: Send email
-        image:
-            type: image
-            group: media
-    record_template: volunteer.twig
-    default_status: publish
-    show_on_dashboard: false
-
 projects:
     name: Projects
     singular_name: Project
@@ -105,37 +70,6 @@ projects:
     sort: -datepublish
     recordsperpage: 10
 
-blog:
-    name: Blog Posts
-    singular_name: Blog Post
-    fields:
-        title:
-            type: text
-            class: large
-            group: content
-        slug:
-            type: slug
-            uses: title
-        teaser:
-            type: html
-            height: 150px
-        body:
-            type: html
-            height: 300px
-        image:
-            type: image
-            group: media
-        imagelist:
-            type: imagelist
-            label: "Gallery images"
-            info: "Here you can add as many images as you want to the gallery."
-    record_template: blogpost.twig
-    listing_template: listing.twig
-    listing_records: 10
-    default_status: publish
-    sort: -datepublish
-    recordsperpage: 10
-
 news:
     name: News
     singular_name: News Post
@@ -164,21 +98,39 @@ news:
     recordsperpage: 10
     show_on_dashboard: false
 
-photoslider:
-    name: Photo Slider
-    singular_name: Photo Slider
+volunteer:
+    name: Volunteer
+    singular_name: Volunteer
+    info: Volunteer
     fields:
         title:
             type: text
+            class: large
             group: content
-        description:
+        become_part_team:
             type: html
+            height: 150px
+            label: Become part of the team
+        restoration:
+            type: html
+            height: 150px
+        online_yfr:
+            type: html
+            height: 150px
+            label: Online YFR
+        who_may_become_volunteer:
+            type: html
+            height: 150px
+            label: Who may become volunteer
+        send_email:
+            type: html
+            height: 50px
+            label: Send email
         image:
             type: image
-    viewless: true
+            group: media
+    record_template: volunteer.twig
     default_status: publish
-    sort: -datepublish
-    listing_records: 10
     show_on_dashboard: false
 
 donate:
@@ -217,6 +169,37 @@ donate:
     default_status: publish
     show_on_dashboard: false
 
+blog:
+    name: Blog
+    singular_name: Blog Post
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many images as you want to the gallery."
+    record_template: blogpost.twig
+    listing_template: listing.twig
+    listing_records: 10
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 10
+
 contact:
     name: Contact
     singular_name: Contact
@@ -241,6 +224,23 @@ contact:
             group: media
     record_template: contact.twig
     default_status: publish
+    show_on_dashboard: false
+
+photoslider:
+    name: Photo Slider
+    singular_name: Photo Slider
+    fields:
+        title:
+            type: text
+            group: content
+        description:
+            type: html
+        image:
+            type: image
+    viewless: true
+    default_status: publish
+    sort: -datepublish
+    listing_records: 10
     show_on_dashboard: false
 
 volunteer_info:
@@ -340,9 +340,6 @@ sponsor_info:
     show_on_dashboard: false
     searchable: false
     viewless: true
-
-
-
 
 
 # possible field types:
