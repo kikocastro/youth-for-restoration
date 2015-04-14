@@ -22,7 +22,7 @@
                 <div class="6u">
                     <section>
                         {% if item.image is not empty %}
-                        <a href="{{ item.link }}" class="image featured"><img src="{{ image(item.image) }}" alt="{{ item.title }}" /></a>
+                        <a href="{{ item.link }}" class="image featured"><img src="{{ image(item.image) }}" alt="{{ item.title }}" class="listing-thumb" /></a>
                         {% endif %}
                         <header>
                             <h3>{{ item.title }}</h3>

@@ -212,9 +212,12 @@ input[type="email"] {
     margin: 85px 0 3em 0; }
     .image.featured img {
       display: block;
-      max-height: 250px;
-      margin-left: auto;
-      margin-right: auto; }
+      width: 100%; }
+      .image.featured img.listing-thumb {
+        width: auto;
+        max-height: 250px;
+        margin-left: auto;
+        margin-right: auto; }
 
 /* Icon */
 .icon {
@@ -937,7 +940,7 @@ body.index #main {
 /*#slider1_container{
 	display: none; position: relative; margin: 0 auto;
 			top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;
-}*/
+			}*/
 /*-------------- LIGHTBOX --------------------*/
 /* Preload images */
 body:after {

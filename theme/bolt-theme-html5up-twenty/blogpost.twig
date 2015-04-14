@@ -12,9 +12,9 @@
                 <h2>{{ record.title }}</h2>
             </header>
             {% if record.image is not empty %}
-                <div class="image featured">
-                    <img src="{{ image(record.image) }}" alt="" />
-                </div>
+                <a href="{{ image(record.image) }}" class="image featured" data-lightbox="blogpost">
+                    <img src="{{ image(record.image) }}" alt="{{ record.title }}" title="{{ record.title }}">
+                </a>
             {% endif %}
             <div class="content">
                 <section>
@@ -31,44 +31,44 @@
 
                             {% set list = record.imagelist %}
 
-                            {% for item in list %}
-                                <a href="{{ image(item.filename) }}" data-lightbox="blogpost">
-                                    <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
-                                </a>
-                            {% endfor %}
-                        </div>
-                    </section>
-                {% endif %}
-            </div>
-        </section>
-        {% setcontent items = "blog/latest/4" %}
-        {% if  items | length > 1 %}
-        <section class="wrapper style1 container special">
-            <header class="special container">
-                <h2>Latest blog posts</h2>
-            </header>
-            <div class="row">
-                {% set countpost = 0 %}
-                {% for item in items %}
-                    {% if item.id != record.id and countpost < 3 %}
-                        {% set countpost = countpost + 1 %}
-                        <div class="4u">
-                            <section>
-                                <header>
-                                    <h3>{{ item.title }}</h3>
-                                </header>
-                                {{ item.teaser }}
-                                <footer>
-                                    <ul class="buttons">
-                                        <li><a href="{{ item.link }}" class="button small">Read More</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
-                        </div>
+                                {% for item in list %}
+                                    <a href="{{ image(item.filename) }}" data-lightbox="blogpost">
+                                        <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </section>
                     {% endif %}
-                {% endfor %}
-            </div>
-        </section>
-        {% endif %}
-    </article>
-{% endblock main %}
+                </div>
+            </section>
+            {% setcontent items = "blog/latest/4" %}
+                {% if  items | length > 1 %}
+                    <section class="wrapper style1 container special">
+                        <header class="special container">
+                            <h2>Latest blog posts</h2>
+                        </header>
+                        <div class="row">
+                            {% set countpost = 0 %}
+                                {% for item in items %}
+                                    {% if item.id != record.id and countpost < 3 %}
+                                        {% set countpost = countpost + 1 %}
+                                            <div class="4u">
+                                                <section>
+                                                    <header>
+                                                        <h3>{{ item.title }}</h3>
+                                                    </header>
+                                                    {{ item.teaser }}
+                                                    <footer>
+                                                        <ul class="buttons">
+                                                            <li><a href="{{ item.link }}" class="button small">Read More</a></li>
+                                                        </ul>
+                                                    </footer>
+                                                </section>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </section>
+                        {% endif %}
+                    </article>
+                {% endblock main %}
