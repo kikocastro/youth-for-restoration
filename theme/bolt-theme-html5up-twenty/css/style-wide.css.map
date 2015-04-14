@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;AAQC,6BAA8B;EAC7B,SAAS,EAAE,IAAI",
+"sources": ["../sass/style-wide.scss"],
+"names": [],
+"file": "style-wide.css"
+}
