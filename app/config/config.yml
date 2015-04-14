@@ -2,13 +2,17 @@
 # SQLite, only the databasename is required, while MySQL and PostgreSQL also
 # require username, password and perhaps a hostname.
 # If you're trying out Bolt, just keep it set to SQLite for now.
+# database:
+#   driver: mysql
+#   username: remote
+#   password: 12345678
+#   databasename: yfr
+#   host: 52.11.80.57
+#   port: 3306
+
 database:
-  driver: mysql
-  username: remote
-  password: 12345678
-  databasename: yfr
-  host: 52.11.80.57
-  port: 3306
+  driver: sqlite
+  databasename: bolt
 
 # The name of the website
 sitename: Youth For Restoration
@@ -189,7 +193,7 @@ branding:
 # the debugbar is only shown to logged-in users. Use the 'debug_show_loggedoff'
 # option to show it to all users. You probably do not want to use this in a
 # production environment.
-debug: true
+debug: false
 developer_notices: false
 debug_show_loggedoff: false
 debug_permission_audit_mode: false

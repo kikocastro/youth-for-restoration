@@ -1,6 +1,6 @@
 # Bolt specific stuff. Don't put config files, databases or 'vendor' in Git.
 app/cache/*
-# app/config/*.yml
+ app/config/*.yml
 # app/config/extensions/
 # app/database/*
 # *config.yml
@@ -9,7 +9,7 @@ app/cache/*
 # thumbs/
 # vendor/
 # phpunit.xml
-css
+# css
 
 # Unless you want to store vendor's "state" in your Git repo.
 composer.phar
@@ -29,7 +29,7 @@ node_modules
 bower_components
 npm-debug.log
 .sass-cache
-*.map
+#*.map
 app/src/tmp/
 app/src/docs/
 
