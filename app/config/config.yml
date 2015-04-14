@@ -2,13 +2,13 @@
 # SQLite, only the databasename is required, while MySQL and PostgreSQL also
 # require username, password and perhaps a hostname.
 # If you're trying out Bolt, just keep it set to SQLite for now.
-# database:
-   driver: mysql
-   username: remote
-   password: 12345678
-   databasename: yfr
-   host: 52.11.80.57
-   port: 3306
+database:
+  driver: mysql
+  username: remote
+  password: 12345678
+  databasename: yfr
+  host: 52.11.80.57
+  port: 3306
 
 # The name of the website
 sitename: Youth For Restoration
