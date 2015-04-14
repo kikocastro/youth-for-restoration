@@ -27,9 +27,9 @@
             </ul>
         </div>
 
-        {% setcontent r1 = "projects/latest/4" orderby '-datepublish'  %}
-        {% setcontent r2 = "blog/latest/4" orderby '-datepublish'  %}
-        {% set records = r1|merge(r2)|order('-datepublish')|slice(0,4) %}
+        {% setcontent r1 = "projects/latest/3" orderby '-datepublish'  %}
+        {% setcontent r2 = "blog/latest/3" orderby '-datepublish'  %}
+        {% set records = r1|merge(r2)|order('-datepublish')|slice(0,3) %}
 
         <div class="4u latest-entries">
             <section>
@@ -54,7 +54,7 @@
                 </header>
                 <div class="social-media-panel">
                     <ul>
-                        <li><img src="{{ paths.theme }}images/tweeter-widget.png" width="80%"></li>
+                        <!--<li><img src="{{ paths.theme }}images/tweeter-widget.png" width="80%"></li>-->
                         <li><br/></li>
                         <li><img src="{{ paths.theme }}images/facebook-widget.png"></li>
                     </ul>
