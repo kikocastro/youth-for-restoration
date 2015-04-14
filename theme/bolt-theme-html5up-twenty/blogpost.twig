@@ -12,7 +12,7 @@
                 <h2>{{ record.title }}</h2>
             </header>
             {% if record.image is not empty %}
-                <a href="{{ image(record.image) }}" class="image featured" data-lightbox="blogpost">
+                <a href="{{ image(record.image) }}" class="image featured" data-lightbox="blogpost" data-title="record.title">
                     <img src="{{ image(record.image) }}" alt="{{ record.title }}" title="{{ record.title }}">
                 </a>
             {% endif %}
@@ -30,9 +30,10 @@
                         <div>
 
                             {% set list = record.imagelist %}
-
                                 {% for item in list %}
-                                    <a href="{{ image(item.filename) }}" data-lightbox="blogpost">
+                                    {# this filter removes the folders, evetual bolt tag numbers and file extension giving the title text #}
+                                    {% set filteredTitle =  item.title | preg_replace('#(.*\/)(\d*_*)#', '') | title | replace({'-':' ', '_':' ', '.jpg': ' '}) | preg_replace('#\\d+#', '') %}
+                                    <a href="{{ image(item.filename) }}" data-lightbox="blogpost-gallery" data-title="{{ filteredTitle }}">
                                         <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}">
                                     </a>
                                 {% endfor %}
