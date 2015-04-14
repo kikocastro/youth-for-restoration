@@ -2,7 +2,7 @@
 # SQLite, only the databasename is required, while MySQL and PostgreSQL also
 # require username, password and perhaps a hostname.
 # If you're trying out Bolt, just keep it set to SQLite for now.
-# database:
+#database:
 #   driver: mysql
 #   username: remote
 #   password: 12345678
@@ -68,7 +68,7 @@ homepage_template: index.twig
 # Make sure this is set to an existing record, otherwise visitors will get an error-page
 # when the request a non-existing page.
 # Note: If you are logged on, and debug is set to 'true', you will NOT see the 404 page!!
-notfound: page/not-found
+notfound: not-found/1
 
 # The default template and amount of records to use for listing-pages on the
 # site. Can be overridden for each contenttype and for each record, if it has a
