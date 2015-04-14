@@ -51,27 +51,31 @@
                 {% endif %}
             </div>
         </section>
-        {% setcontent items = "projects/latest/3" %}
+        {% setcontent items = "projects/latest/4" %}
         {% if  items | length > 1 %}
         <section class="wrapper style1 container special">
             <header class="special container">
                 <h2>Check out other cool Projects</h2>
             </header>
             <div class="row">
+                {% set countpost = 0 %}
                 {% for item in items %}
-                <div class="4u">
-                    <section>
-                        <header>
-                            <h3>{{ item.title }}</h3>
-                        </header>
-                        {{ item.teaser }}
-                        <footer>
-                            <ul class="buttons">
-                                <li><a href="{{ item.link }}" class="button small">Read More</a></li>
-                            </ul>
-                        </footer>
-                    </section>
-                </div>
+                    {% if item.id != record.id and countpost < 3 %}
+                        {% set countpost = countpost + 1 %}
+                        <div class="4u">
+                            <section>
+                                <header>
+                                    <h3>{{ item.title }}</h3>
+                                </header>
+                                {{ item.teaser }}
+                                <footer>
+                                    <ul class="buttons">
+                                        <li><a href="{{ item.link }}" class="button small">Read More</a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </section>
