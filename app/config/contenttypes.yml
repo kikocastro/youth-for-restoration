@@ -344,6 +344,29 @@ sponsor_info:
     searchable: false
     viewless: true
 
+notfound:
+    name: Not Found
+    singular_name: Not Found
+    info: Not Found Page
+    fields:
+        title:
+            type: text
+            class: large
+        message:
+            type: html
+            height: 150px
+            label: Not found message
+        slug:
+            type: slug
+            uses: title
+        image:
+            type: image
+    record_template: not-found.twig
+    searchable: false
+    viewless: true
+    default_status: publish
+    show_on_dashboard: false
+
 
 # possible field types:
 # text - varchar(256) - input type text.
