@@ -746,7 +746,9 @@ body.index #main {
     background-color: rgba(255, 255, 255, 0.1);
     padding-left: 24px;
     padding-right: 10px;
-    border-radius: 0 20px; }
+    border-radius: 0 20px;
+    line-height: 1.6em;
+    margin-bottom: 0.8em; }
   #footer .latest-entries a {
     color: #fff; }
     #footer .latest-entries a:hover {
