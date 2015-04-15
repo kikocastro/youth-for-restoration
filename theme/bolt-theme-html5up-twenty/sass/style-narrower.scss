@@ -37,6 +37,12 @@
 		&:first-child {
 			margin-top: 0;
 		}
+
+		&.style2 {
+			p {
+				text-align: center;
+			}
+		}
 	}
 
 /* Button */

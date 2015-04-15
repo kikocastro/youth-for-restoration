@@ -19,6 +19,8 @@ section {
   margin: 1em 0 1em 0; }
   section:first-child {
     margin-top: 0; }
+  section.style2 p {
+    text-align: center; }
 
 /* Button */
 input[type="button"].small,

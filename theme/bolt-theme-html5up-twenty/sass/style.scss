@@ -577,6 +577,10 @@ $pattern-background-size: 25em;
 				color: $color-one-fg;
 			}
 
+			p {
+				margin: 0;
+			}
+
 			.row {
 				padding-left: 0;
 				padding-right: inherit;
