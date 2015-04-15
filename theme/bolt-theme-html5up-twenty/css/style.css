@@ -715,9 +715,6 @@ input[type="reset"],
       padding-top: 0;
       margin-top: 0; }
 
-body.index #main {
-  padding-top: 160px; }
-
 /* CTA */
 #cta {
   background-attachment: fixed;
