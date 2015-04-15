@@ -7,10 +7,10 @@
 {% block main %}
     <article id="main">
 
-        <section class="wrapper style4 container">
+        <section class="wrapper style1 container">
             {% if record.image is not empty %}
-                <div class="image featured">
-                    <img src="{{ image(record.image) }}" alt="" />
+                <div class="image" style="text-align:center;">
+                    <img src="{{ image(record.image) }}" width="500"  />
                 </div>
             {% endif %}
             <div class="content">
