@@ -211,7 +211,7 @@ input[type="email"] {
     margin: 85px 0 3em 0 !important; }
   .image.featured {
     display: block;
-    margin: 85px 0 -50px 0; }
+    margin: 85px 0 40px 0; }
     .image.featured img {
       display: block;
       width: 100%; }
