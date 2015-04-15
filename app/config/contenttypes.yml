@@ -1,0 +1,393 @@
+about_us:
+    name: About Us
+    singular_name: About Us
+    info: About Us
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        about_us:
+            type: html
+            height: 150px
+            label: About Us
+        our_mission:
+            type: html
+            height: 150px
+            label: Our Mission
+        founder:
+            type: text
+        board:
+            type: html
+            height: 150px
+        cta_title:
+            type: text
+            label: Heading
+        cta_text:
+            type: text
+            label: Text
+        image:
+            type: image
+            group: media
+    record_template: about-us.twig
+    default_status: publish
+    show_on_dashboard: false
+
+projects:
+    name: Projects
+    singular_name: Project
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+            required: true
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+            pattern: "^.{1,200}$"
+            required: true
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+            required: true
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many images you want to this project gallery."
+        file:
+            type: file
+            group: files
+            prefix: "<h4>Upload the presentation file for this project:</h4>"
+            info: "Upload the presentation file for this project"
+            label: "Presentation file"
+    record_template: project.twig
+    listing_template: listing.twig
+    listing_records: 8
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 8
+
+news:
+    name: News
+    singular_name: News Post
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        body:
+            type: html
+            height: 300px
+        link_to_news:
+            type: text
+            label: Link
+            class: large
+            group: content
+        imagelist:
+            type: imagelist
+            label: "Images"
+            info: "Here you can add as many images as you want."
+            group: media
+    record_template: blogpost.twig
+    listing_template: news-listing.twig
+    listing_records: 8
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 8
+    show_on_dashboard: false
+
+volunteer:
+    name: Volunteer
+    singular_name: Volunteer
+    info: Volunteer
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        become_part_team:
+            type: html
+            height: 150px
+            label: Become part of the team
+        restoration:
+            type: html
+            height: 150px
+        online_yfr:
+            type: html
+            height: 150px
+            label: Online YFR
+        who_may_become_volunteer:
+            type: html
+            height: 150px
+            label: Who may become volunteer
+        send_email:
+            type: html
+            height: 50px
+            label: Send email
+        image:
+            type: image
+            group: media
+    record_template: volunteer.twig
+    default_status: publish
+    show_on_dashboard: false
+
+donate:
+    name: Donate
+    singular_name: Donate
+    info: Donate
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        ways_give:
+            type: html
+            height: 150px
+            label: Ways to give
+        donate_online:
+            type: html
+            height: 150px
+            label: Donate Online
+        donate_mail:
+            type: html
+            height: 150px
+            label: Donate by mail
+        org_registration:
+            type: html
+            height: 150px
+            label: Organization registration
+        become_sponsor:
+            type: html
+            height: 50px
+            label: Become a sponsor
+        image:
+            type: image
+            group: media
+    record_template: donate.twig
+    default_status: publish
+    show_on_dashboard: false
+
+blog:
+    name: Blog Posts
+    singular_name: Blog Post
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+            required: true
+        slug:
+            type: slug
+            uses: title
+        teaser:
+            type: html
+            height: 150px
+            pattern: "^.{1,200}$"
+            required: true
+        body:
+            type: html
+            height: 300px
+        image:
+            type: image
+            group: media
+            required: true
+        imagelist:
+            type: imagelist
+            label: "Gallery images"
+            info: "Here you can add as many images as you want to the gallery."
+    record_template: blogpost.twig
+    listing_template: listing.twig
+    listing_records: 8
+    default_status: publish
+    sort: -datepublish
+    recordsperpage: 8
+
+contact:
+    name: Contact
+    singular_name: Contact
+    fields:
+        title:
+            type: text
+            class: large
+            group: content
+        body:
+            type: html
+            height: 300px
+        email:
+            type: text
+        telephone:
+            type: text
+        address:
+            type: text
+        geolocation:
+            type: geolocation
+        image:
+            type: image
+            group: media
+    record_template: contact.twig
+    default_status: publish
+    show_on_dashboard: false
+
+photoslider:
+    name: Photo Slider
+    singular_name: Photo Slider
+    fields:
+        title:
+            type: text
+            group: content
+        description:
+            type: html
+        image:
+            type: image
+    viewless: true
+    default_status: publish
+    sort: -datepublish
+    listing_records: 8
+    show_on_dashboard: false
+
+volunteer_info:
+    name: Volunteers List
+    slug: volunteers-list
+    singular_name: Volunteer
+    singular_slug: volunteer-worker
+    fields:
+        name:
+            type: text
+            group: info
+            required: true
+        email:
+            type: text
+            group: info
+            required: true
+            pattern: email
+        phone:
+            type: text
+            group: info
+        address1:
+            type: text
+            required: true
+            group: info
+            label: Address line 1
+        address2:
+            type: text
+            group: info
+            label: Address line 2
+        city:
+            type: text
+            required: true
+            group: info
+        state:
+            type: text
+            required: true
+            group: info
+        zip:
+            type: text
+            required: true
+            group: info
+        description:
+            type: html
+            group: info
+        photo:
+            type: image
+            group: media
+    default_status: published
+    show_on_dashboard: false
+    searchable: false
+    viewless: true
+
+sponsor_info:
+    name: Sponsors List
+    singular_name: Sponsor
+    fields:
+        name:
+            type: text
+            group: info
+            required: true
+        email:
+            type: text
+            group: info
+            required: true
+            pattern: email
+        phone:
+            type: text
+            group: info
+        address1:
+            type: text
+            group: info
+            label: Address line 1
+        address2:
+            type: text
+            group: info
+            label: Address line 2
+        city:
+            type: text
+            group: info
+        state:
+            type: text
+            group: info
+        zip:
+            type: text
+            group: info
+        description:
+            type: html
+            group: info
+        photo:
+            type: image
+            group: media
+    default_status: published
+    show_on_dashboard: false
+    searchable: false
+    viewless: true
+
+notfound:
+    name: Not Found
+    singular_name: Not Found
+    info: Not Found Page
+    fields:
+        title:
+            type: text
+            class: large
+        message:
+            type: html
+            height: 150px
+            label: Not found message
+        slug:
+            type: slug
+            uses: title
+        image:
+            type: image
+    record_template: not-found.twig
+    searchable: false
+    viewless: true
+    default_status: publish
+    show_on_dashboard: false
+
+
+# possible field types:
+# text - varchar(256) - input type text.
+# integer - integer - Input field for integer numbers.
+# float - double - Input field for floating numbers, stored as 'Double'.
+# geolocation - text (65kb) - Input field for geolocation. Enter an address, and the location is geocoded to latitude/longitude coordinates
+# imagelist - text (65kb) - Input type for imagelists. Add multiple images with a description. Useful for image sliders, galleries, etcetera.
+# image - varchar(256) - image select/upload widget, stored as filename.
+# file - varchar(256) - file select/upload widget, stored as filename.
+# filelist - text (65kb) - Input type for a list of files. Including a description.
+# video - varchar(256) - Video embed widget, stored as filename.
+# html - text (65kb) - wysiwyg element.
+# textarea - varchar(32768) - Simple, plain < textarea > field.
+# markdown - varchar(32768) - Simple, plain < textarea > field, which is parsed as Markdown text.
+# datetime - datetime - date and time selector widget.
+# date - datetime - date selector widget.
+# select - varchar(256) - select with predefined values
+# templateselect - varchar(256) - select with template filenames
+# checkbox - integer - checkbox-field which is 1 (checked) or 0 (unchecked)
+
+
+# number (deprecated) - input type decimal(18,9), useful for storing number that need to be sortable
