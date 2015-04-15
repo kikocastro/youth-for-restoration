@@ -265,9 +265,13 @@ $pattern-background-size: 25em;
 			}
 		}
 
+		&.main-image {
+			margin: 85px 0 3em 0 !important;
+		}
+
 		&.featured {
 			display: block;
-			margin: 85px 0 3em 0;
+			margin: 85px 0 -50px 0;
 
 			img {
 				display: block;
@@ -904,7 +908,7 @@ $pattern-background-size: 25em;
 	}
 
 	body.index #main {
-		padding-top: 1px;
+		padding-top: 160px;
 	}
 
 	/* CTA */
@@ -1404,9 +1408,12 @@ $pattern-background-size: 25em;
 
 				.news {
 
-					h2, p {
+					h2 {
 						text-align: left;
+					}
 
+					p {
+						text-align: justify;
 					}
 
 					p, .image-list {

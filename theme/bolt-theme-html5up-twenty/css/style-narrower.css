@@ -2,7 +2,7 @@
 	Twenty by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
 /* Basic */
 header.major {
   padding-bottom: 0.25em; }
@@ -83,7 +83,23 @@ body.index #main {
 
 /* CTA */
 #cta {
+  margin: 0;
+  background-size: cover !important; }
+
+/* News */
+.news h2 {
+  margin-left: 80px;
+  font-size: 20px; }
+.news p {
   margin: 0; }
+  .news p a {
+    line-height: 50px; }
+.news .icon.circle {
+  font-size: 25px;
+  top: 25px; }
+.news .image-list {
+  margin: 0;
+  margin: 30px 0 0 0; }
 
 /* Footer */
 #footer {

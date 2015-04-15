@@ -12,7 +12,7 @@
                 <h2>{{ record.title }}</h2>
             </header>
             {% if record.image is not empty %}
-                <a href="{{ image(record.image) }}" class="image featured" data-lightbox="blogpost" data-title="record.title">
+                <a href="{{ image(record.image) }}" class="image featured main-image" data-lightbox="blogpost" data-title="record.title">
                     <img src="{{ image(record.image) }}" alt="{{ record.title }}" title="{{ record.title }}">
                 </a>
             {% endif %}

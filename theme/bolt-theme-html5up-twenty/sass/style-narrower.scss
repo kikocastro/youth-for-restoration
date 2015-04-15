@@ -5,9 +5,9 @@
 	Twenty by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
 
-/* Basic */
+	/* Basic */
 
 	header {
 		&.major {
@@ -29,7 +29,7 @@
 		}
 	}
 
-/* Section/Article */
+	/* Section/Article */
 
 	section {
 		margin: 1em 0 1em 0;
@@ -45,7 +45,7 @@
 		}
 	}
 
-/* Button */
+	/* Button */
 
 	input[type="button"],
 	input[type="submit"],
@@ -58,7 +58,7 @@
 		}
 	}
 
-/* List */
+	/* List */
 
 	ul {
 		&.featured-icons {
@@ -84,7 +84,7 @@
 		}
 	}
 
-/* Header */
+	/* Header */
 
 	#header {
 
@@ -93,7 +93,7 @@
 		}
 
 		.logo {
-		  float: left;
+			float: left;
 		}
 
 		&.alt {
@@ -101,20 +101,20 @@
 		}
 	}
 
-/* Photoslider */
-section#photoslider {
-  margin: 0;
-  padding-top: 80px;
-}
+	/* Photoslider */
+	section#photoslider {
+		margin: 0;
+		padding-top: 80px;
+	}
 
 
-/* Banner */
+	/* Banner */
 
 	#banner {
 		margin: 0;
 	}
 
-/* Wrapper */
+	/* Wrapper */
 
 	.wrapper {
 		&.special-alt {
@@ -126,7 +126,7 @@ section#photoslider {
 		}
 	}
 
-/* Main */
+	/* Main */
 
 	#main {
 		padding: 5em 0;
@@ -146,13 +146,44 @@ section#photoslider {
 		padding-top: 4.5em;
 	}
 
-/* CTA */
+	/* CTA */
 
 	#cta {
 		margin: 0;
+		background-size: cover !important;
+
 	}
 
-/* Footer */
+	/* News */
+
+	.news {
+
+		h2 {
+			margin-left: 80px;;
+			font-size: 20px;
+		}
+
+		p {
+			margin: 0;
+
+			a {
+				line-height: 50px;
+			}
+		}
+
+
+		.icon.circle {
+			font-size: 25px;
+			top: 25px;
+		}
+
+		.image-list {
+			margin: 0;
+			margin: 30px 0 0 0;
+		}
+	}
+
+	/* Footer */
 
 	#footer {
 		padding: 4em 1.5em;
