@@ -92,9 +92,8 @@ news:
             group: content
         imagelist:
             type: imagelist
-            label: "Images"
+            label: "Gallery"
             info: "Here you can add as many images as you want."
-            group: media
     record_template: blogpost.twig
     listing_template: news-listing.twig
     listing_records: 8
