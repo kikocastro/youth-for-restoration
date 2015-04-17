@@ -29,7 +29,8 @@
 
         {% setcontent r1 = "projects/latest/3" orderby '-datepublish'  %}
         {% setcontent r2 = "blog/latest/3" orderby '-datepublish'  %}
-        {% set records = r1|merge(r2)|order('-datepublish')|slice(0,3) %}
+        {% setcontent r3 = "news/latest/3" orderby '-datepublish'  %}
+        {% set records = r1|merge(r2)|merge(r3)|order('-datepublish')|slice(0,3) %}
 
         <div class="4u latest-entries">
             <section>
