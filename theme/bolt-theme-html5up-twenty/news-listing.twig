@@ -41,7 +41,7 @@
                                                 {% set list = item.imagelist %}
                                                     {% for item in list %}
                                                         <a href="{{ image(item.filename) }}" data-lightbox="blogpost">
-                                                            <img src="{{ thumbnail(item.filename, 100,100) }}" alt="{{ item.title }}" title="{{ item.title }}" target="_blank">
+                                                            <img src="{{ thumbnail(item.filename, 200,130) }}" alt="{{ item.title }}" title="{{ item.title }}" target="_blank">
                                                         </a>
                                                     {% endfor %}
                                                 </div>
