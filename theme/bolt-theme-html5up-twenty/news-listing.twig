@@ -19,7 +19,11 @@
                     <ul>
                         {% for item in records %}
                             <li>
+                                {% if item.link_to_news is not empty  %}
                                 <a href="{{ item.link_to_news }}" class="icon circle fa-newspaper-o" target="_blank"></a>
+                                {% else %}
+                                <span class="icon circle fa-newspaper-o"></span>
+                                {% endif %}
                                 <header>
                                     <h2>{{ item.title }}</h2>
                                 </header>

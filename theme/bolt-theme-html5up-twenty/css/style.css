@@ -1152,7 +1152,7 @@ body:after {
   font-size: 30px;
   top: 11px;
   background-color: #48AFE3; }
-.news a.icon {
+.news .icon {
   color: #fff !important; }
 .news li {
   margin-bottom: 50px; }
