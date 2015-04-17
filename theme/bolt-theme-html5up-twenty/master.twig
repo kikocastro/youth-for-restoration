@@ -5,83 +5,93 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        {% block head -%}
+<head>
+    {% block head -%}
         <title>
-        {%- block title -%}
-        {%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
-        {{ app.config.get('general/sitename') }}
-        {%- if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif -%}
-        {%- endblock title -%}
-        </title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <script>
-        var paths = {
-            theme : '{{ paths.theme }}'
-        };
-        </script>
+            {%- block title -%}
+                {%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
+                    {{ app.config.get('general/sitename') }}
+                    {%- if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif -%}
+                    {%- endblock title -%}
+                </title>
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <meta name="description" content="" />
+                <meta name="keywords" content="" />
+                <script>
+                    var paths = {
+                        theme : '{{ paths.theme }}'
+                    };
+                </script>
 
-        {%- block scripts %}
+                {%- block scripts %}
 
-        <!--[if lte IE 8]><script src="{{ paths.theme }}css/ie/html5shiv.js"></script><![endif]-->
-        <script src="{{ paths.theme }}js/jquery.min.js"></script>
-        <script src="{{ paths.theme }}js/jquery.dropotron.min.js"></script>
-        <script src="{{ paths.theme }}js/jquery.scrolly.min.js"></script>
-        <script src="{{ paths.theme }}js/jquery.scrollgress.min.js"></script>
-        <script src="{{ paths.theme }}js/skel.min.js"></script>
-        <script src="{{ paths.theme }}js/skel-layers.min.js"></script>
-        <script src="{{ paths.theme }}js/init.js"></script>
-        <script src="{{ paths.theme }}js/lightbox.min.js"></script>
+                    <!--[if lte IE 8]><script src="{{ paths.theme }}css/ie/html5shiv.js"></script><![endif]-->
+                    <script src="{{ paths.theme }}js/jquery.min.js"></script>
+                    <script src="{{ paths.theme }}js/jquery.dropotron.min.js"></script>
+                    <script src="{{ paths.theme }}js/jquery.scrolly.min.js"></script>
+                    <script src="{{ paths.theme }}js/jquery.scrollgress.min.js"></script>
+                    <script src="{{ paths.theme }}js/skel.min.js"></script>
+                    <script src="{{ paths.theme }}js/skel-layers.min.js"></script>
+                    <script src="{{ paths.theme }}js/init.js"></script>
+                    <script src="{{ paths.theme }}js/lightbox.min.js"></script>
 
-        {% endblock scripts %}
+                {% endblock scripts %}
 
-        {%- block stylesheets %}
+                {%- block stylesheets %}
 
-        <noscript>
-            <link rel="stylesheet" href="{{ paths.theme }}css/skel.css" />
-            <link rel="stylesheet" href="{{ paths.theme }}css/style.css" />
-            <link rel="stylesheet" href="{{ paths.theme }}css/style-wide.css" />
-            <link rel="stylesheet" href="{{ paths.theme }}css/style-noscript.css" />
-        </noscript>
-        <!--[if lte IE 8]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v9.css" /><![endif]-->
+                    <noscript>
+                        <link rel="stylesheet" href="{{ paths.theme }}css/skel.css" />
+                        <link rel="stylesheet" href="{{ paths.theme }}css/style.css" />
+                        <link rel="stylesheet" href="{{ paths.theme }}css/style-wide.css" />
+                        <link rel="stylesheet" href="{{ paths.theme }}css/style-noscript.css" />
+                    </noscript>
+                    <!--[if lte IE 8]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v8.css" /><![endif]-->
+                    <!--[if lte IE 9]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v9.css" /><![endif]-->
 
-        {% endblock stylesheets %}
+                {% endblock stylesheets %}
 
-        {%- endblock head %}
+            {%- endblock head %}
 
-    </head>
-    <body class="{% block bodyclass %}{% endblock %}">
+        </head>
+        <body class="{% block bodyclass %}{% endblock %}">
 
-        {% block header %}
-            <header id="header" class="{% block headerclass %}{% endblock %}">
-                <div class="logo">
-                    <a href="{{ paths.root }}" class="no-underline">
-                        <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" height="auto" alt="Love our community and cookies? Come and join us!">
-                    </a>
-                </div>
+            {% block header %}
+                <header id="header" class="{% block headerclass %}{% endblock %}">
+                    <div class="logo">
+                        <a href="{{ paths.root }}" class="no-underline">
+                            <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" height="auto" alt="Love our community and cookies? Come and join us!">
+                        </a>
+                    </div>
                     <nav id="nav">
                         <ul>
                             {{ menu('main', '_menu.twig') }}
+                            <li>
+
+                            </li>
                         </ul>
+                        {# one omnisearch here, for "small and up", the other in the side-navbar #}
+                        <form class="navbar-form hidden-xs" role="search">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="form-control semitransparent omnisearch" placeholder="{{ __('Find') }}…">
+                                <span class="form-control-feedback semitransparent"><i class="fa fa-search"></i></span>
+                            </div>
+                        </form>
                     </nav>
-            </header>
-        {% endblock header %}
+                </header>
+            {% endblock header %}
 
-        {% block banner %}
-        {% endblock banner %}
+            {% block banner %}
+            {% endblock banner %}
 
-        {% block main %}
-        {% endblock main %}
+            {% block main %}
+            {% endblock main %}
 
-        {% block cta %}
-        {% endblock cta %}
+            {% block cta %}
+            {% endblock cta %}
 
-        {% block footer %}
-            {% include('_footer.twig') %}
-        {% endblock footer %}
+            {% block footer %}
+                {% include('_footer.twig') %}
+            {% endblock footer %}
 
-    </body>
-</html>
+        </body>
+        </html>
