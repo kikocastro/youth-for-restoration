@@ -765,9 +765,9 @@ input[type="reset"],
     margin: 0 0 20px 0;
     font-size: 16px;
     line-height: 23px; }
-  #footer .social-media-panel {
+  #footer .social-media-buttons {
     text-align: center; }
-    #footer .social-media-panel li {
+    #footer .social-media-buttons li {
       margin-bottom: 10px; }
   #footer .copyright {
     font-size: 0.7em;
