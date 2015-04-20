@@ -24,11 +24,10 @@
                 {% if record.imagelist %}
                     <section>
                         <br/>
-                        <header class="special container">
+                        <header class="special">
                             <h2>Gallery</h2>
                         </header>
-                        <div>
-
+                        <div class="entry-gallery">
                             {% set list = record.imagelist %}
                                 {% for item in list %}
                                     {# this filter removes the folders, evetual bolt tag numbers and file extension giving the title text #}
