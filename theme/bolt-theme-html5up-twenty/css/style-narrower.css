@@ -9,6 +9,8 @@
 
 header.major {
   padding-bottom: 0.25em; }
+header .logo {
+  margin-left: 80px; }
 header.special {
   margin-bottom: -2em !important;
   padding-top: 3em; }
