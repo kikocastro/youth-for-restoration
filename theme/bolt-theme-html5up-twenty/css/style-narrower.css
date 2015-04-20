@@ -21,6 +21,8 @@ section {
     margin-top: 0; }
   section.style2 p {
     text-align: center; }
+  section h2 {
+    min-height: 80px; }
 
 /* Button */
 input[type="button"].small,
