@@ -76,6 +76,8 @@ ul.buttons {
   .wrapper.style2 {
     background-size: 10em;
     padding: 2.25em 1.5em; }
+  .wrapper.style3 img.listing-thumb {
+    max-width: 270px; }
   .wrapper.style4 {
     background-size: 10em;
     padding: 1.5em 1.5em 3em 1.5em; }

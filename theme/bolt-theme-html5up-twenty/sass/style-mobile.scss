@@ -131,6 +131,12 @@ $pattern-background-size: 10em;
 			padding: 2.25em 1.5em;
 		}
 
+		&.style3 {
+			img.listing-thumb {
+				max-width: 270px;
+			}
+		}
+
 		&.style4 {
 			background-size: $pattern-background-size;
 			padding: 1.5em 1.5em 3em 1.5em;

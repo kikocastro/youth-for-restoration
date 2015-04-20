@@ -288,6 +288,7 @@ $pattern-background-size: 25em;
 				&.listing-thumb {
 					max-width: 408px;
 					max-height: 250px;
+					width: auto;
 					margin-left: auto;
 					margin-right: auto;
 				}
