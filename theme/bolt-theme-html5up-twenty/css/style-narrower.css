@@ -72,6 +72,10 @@ section#photoslider {
 /* Wrapper */
 .wrapper.special-alt {
   text-align: center; }
+.wrapper.style3 {
+  padding-top: 70px; }
+  .wrapper.style3 h2 {
+    min-height: 0px !important; }
 .wrapper.style4 {
   padding-bottom: 3em; }
 

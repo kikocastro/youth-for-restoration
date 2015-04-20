@@ -134,6 +134,14 @@
 			text-align: center;
 		}
 
+		&.style3 {
+			padding-top: 70px;
+
+			h2 {
+ 		 		min-height: 0px !important;
+			}
+		}
+
 		&.style4 {
 			padding-bottom: 3em;
 		}
