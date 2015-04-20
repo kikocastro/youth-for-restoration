@@ -112,8 +112,12 @@ $pattern-background-size: 25em;
 			text-align: center;
 		}
 
-		.image.featured {
+		.image.featured img {
 			margin-bottom: 40px;
+			margin-right: auto;
+			margin-left: auto;
+		  width: auto;
+		  max-height: 600px;
 		}
 
 		.entry-gallery {

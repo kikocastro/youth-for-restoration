@@ -92,8 +92,12 @@ blockquote {
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
-section .image.featured, article .image.featured {
-  margin-bottom: 40px; }
+section .image.featured img, article .image.featured img {
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  max-height: 600px; }
 section .entry-gallery, article .entry-gallery {
   text-align: center; }
 section .contact-form, article .contact-form {
