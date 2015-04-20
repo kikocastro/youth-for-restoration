@@ -20,6 +20,8 @@ header.special {
 
 footer.major {
   padding-top: 1.5em; }
+footer ul.buttons li {
+  display: initial; }
 
 /* Wrapper */
 .wrapper {

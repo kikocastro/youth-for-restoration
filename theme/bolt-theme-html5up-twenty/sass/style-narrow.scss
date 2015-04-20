@@ -35,6 +35,10 @@ $pattern-background-size: 15em;
 		&.major {
 			padding-top: 1.5em;
 		}
+
+		ul.buttons li {
+			display: initial;
+		}
 	}
 
 /* Wrapper */
