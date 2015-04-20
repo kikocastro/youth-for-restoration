@@ -86,7 +86,7 @@ section#photoslider {
       padding-top: 0; }
 
 body.index #main {
-  padding-top: 4.5em; }
+  padding-bottom: 40px !important; }
 
 /* CTA */
 #cta {
@@ -110,7 +110,6 @@ body.index #main {
 
 /* Footer */
 #footer {
-  padding: 4em 1.5em;
-  margin-top: 40px; }
+  padding: 4em 1.5em; }
 
 /*# sourceMappingURL=style-narrower.css.map */
