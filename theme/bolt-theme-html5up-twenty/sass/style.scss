@@ -112,6 +112,10 @@ $pattern-background-size: 25em;
 			text-align: center;
 		}
 
+		.image.featured {
+			margin-bottom: 40px;
+		}
+
 		.contact-form {
 			padding-top: 70px;
 
@@ -271,7 +275,7 @@ $pattern-background-size: 25em;
 
 		&.featured {
 			display: block;
-			margin: 85px 0 40px 0;
+			margin: 85px 0 0px 0;
 
 			img {
 				display: block;

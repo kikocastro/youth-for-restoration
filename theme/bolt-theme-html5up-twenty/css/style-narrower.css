@@ -4,11 +4,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	*/
 /* Basic */
+.image.featured {
+  margin: 81px 0 0px 0; }
+
 header.major {
   padding-bottom: 0.25em; }
 header.special {
-  margin-bottom: 4em;
-  padding-top: 5em; }
+  margin-bottom: -2em !important;
+  padding-top: 3em; }
   header.special:before, header.special:after {
     width: 40%; }
   header.special h2 + p {
@@ -105,6 +108,7 @@ body.index #main {
 
 /* Footer */
 #footer {
-  padding: 4em 1.5em; }
+  padding: 4em 1.5em;
+  margin-top: 40px; }
 
 /*# sourceMappingURL=style-narrower.css.map */

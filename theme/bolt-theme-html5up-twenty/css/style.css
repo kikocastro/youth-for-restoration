@@ -92,6 +92,8 @@ blockquote {
 /* Section/Article */
 section.special, article.special {
   text-align: center; }
+section .image.featured, article .image.featured {
+  margin-bottom: 40px; }
 section .contact-form, article .contact-form {
   padding-top: 70px; }
   section .contact-form ul, article .contact-form ul {
@@ -211,7 +213,7 @@ input[type="email"] {
     margin: 85px 0 3em 0 !important; }
   .image.featured {
     display: block;
-    margin: 85px 0 40px 0; }
+    margin: 85px 0 0px 0; }
     .image.featured img {
       display: block;
       width: 100%; }

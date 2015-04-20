@@ -9,14 +9,18 @@
 
 	/* Basic */
 
+	.image.featured {
+		margin: 81px 0 0px 0;
+	}
+
 	header {
 		&.major {
 			padding-bottom: 0.25em;
 		}
 
 		&.special {
-			margin-bottom: 4em;
-			padding-top: 5em;
+			margin-bottom: -2em !important;
+			padding-top: 3em;
 
 			&:before,
 			&:after {
@@ -48,9 +52,6 @@
 			min-height: 80px;
 		}
 
-		// &.image.featured img.listing-thumb {
-		// 	width: 0;
-		// }
 	}
 
 	/* Button */
@@ -195,4 +196,5 @@
 
 	#footer {
 		padding: 4em 1.5em;
+		margin-top: 40px;
 	}
