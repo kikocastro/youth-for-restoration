@@ -94,7 +94,7 @@ news:
             type: imagelist
             label: "Gallery"
             info: "Here you can add as many images as you want."
-    record_template: blogpost.twig
+    record_template: index.twig
     listing_template: news-listing.twig
     listing_records: 8
     default_status: publish
