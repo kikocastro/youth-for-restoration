@@ -651,6 +651,10 @@ $pattern-background-size: 25em;
 					text-align: right;
 				}
 
+				.text-link p {
+					color: $color-fg !important;
+				}
+
 				h3, p {
 					text-align: left;
 				}

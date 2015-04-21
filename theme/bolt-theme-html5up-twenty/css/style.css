@@ -477,6 +477,8 @@ input[type="reset"],
     color: inherit; }
     .wrapper.style3 .search-listing img {
       text-align: right; }
+    .wrapper.style3 .search-listing .text-link p {
+      color: #7c8081 !important; }
     .wrapper.style3 .search-listing h3, .wrapper.style3 .search-listing p {
       text-align: left; }
   .wrapper.style4 {
