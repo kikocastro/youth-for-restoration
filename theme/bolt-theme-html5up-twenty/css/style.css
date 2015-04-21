@@ -481,6 +481,8 @@ input[type="reset"],
       color: #7c8081 !important; }
     .wrapper.style3 .search-listing h3, .wrapper.style3 .search-listing p {
       text-align: left; }
+    .wrapper.style3 .search-listing a:hover p {
+      color: #48AFE3 !important; }
   .wrapper.style4 {
     background: #fff;
     color: inherit;

@@ -658,6 +658,12 @@ $pattern-background-size: 25em;
 				h3, p {
 					text-align: left;
 				}
+
+				a:hover {
+					p {
+						color: $color-light-blue !important;
+					}
+				}
 			}
 		}
 
