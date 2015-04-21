@@ -480,7 +480,8 @@ input[type="reset"],
     .wrapper.style3 .search-listing .text-link p {
       color: #7c8081 !important; }
     .wrapper.style3 .search-listing h3, .wrapper.style3 .search-listing p {
-      text-align: left; }
+      text-align: left;
+      margin-top: -8px; }
     .wrapper.style3 .search-listing a:hover p {
       color: #48AFE3 !important; }
   .wrapper.style4 {
