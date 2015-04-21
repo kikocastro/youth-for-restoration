@@ -66,6 +66,13 @@ $pattern-background-size: 15em;
 		}
 	}
 
+	section, article {
+
+		.image.featured img {
+			width: 100%;
+		}
+	}
+
 /* Banner */
 
 	#banner {

@@ -36,6 +36,9 @@ footer ul.buttons li {
   .wrapper.style4 {
     padding: 2.5em; }
 
+section .image.featured img, article .image.featured img {
+  width: 100%; }
+
 /* Banner */
 #banner {
   background-size: 15em, 15em, auto, cover; }
