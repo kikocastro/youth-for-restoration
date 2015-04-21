@@ -68,30 +68,36 @@
                             {{ menu('main', '_menu.twig') }}
                             <li>
                                 <div id="wrap">
-                                  <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" autocomplete="on">
-                                    <input id="search" name="q" type="text" placeholder="What are we looking for?">
-                                    <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
-                                  </form>
-                              </div>
-                          </li>
-                      </li>
-                  </ul>
-              </nav>
-          </header>
-      {% endblock header %}
+                                    <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" autocomplete="on">
+                                        <input id="search" name="q" type="text" placeholder="What are we looking for?">
+                                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
+                                    </form>
+                                </div>
+                            </li>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="wrap" class="mobile-search">
+                    <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" autocomplete="on">
+                        <input id="search" name="q" type="text" placeholder="What are we looking for?">
+                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
+                    </form>
+                </div>
+            </header>
+        {% endblock header %}
 
-      {% block banner %}
-      {% endblock banner %}
+        {% block banner %}
+        {% endblock banner %}
 
-      {% block main %}
-      {% endblock main %}
+        {% block main %}
+        {% endblock main %}
 
-      {% block cta %}
-      {% endblock cta %}
+        {% block cta %}
+        {% endblock cta %}
 
-      {% block footer %}
-        {% include('_footer.twig') %}
-    {% endblock footer %}
+        {% block footer %}
+            {% include('_footer.twig') %}
+        {% endblock footer %}
 
-</body>
-</html>
+    </body>
+    </html>

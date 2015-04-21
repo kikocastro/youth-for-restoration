@@ -1171,6 +1171,10 @@ body:after {
   height: 0;
   clear: both; }
 
+.mobile-search {
+  visibility: hidden;
+  height: 0 !important; }
+
 body {
   background: #DDD;
   font-size: 15px; }

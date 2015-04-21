@@ -4,9 +4,9 @@ $pattern-background-size: 10em;
 	Twenty by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
 
-/* Basic */
+	/* Basic */
 
 	body {
 		min-width: 320px;
@@ -26,7 +26,26 @@ $pattern-background-size: 10em;
 		text-align: justify;
 	}
 
-/* Section/Article */
+	/* searchbox */
+
+	#wrap {
+		margin: 18px 0px -43px 0px;
+
+		input[type="text"] {
+			font-size: 20px;
+		}
+
+		input[type="text"]:focus {
+			width: 270px;
+		}
+
+		input[type="submit"] {
+			min-width: 0;
+			width: 20px;
+		}
+	}
+
+	/* Section/Article */
 
 	header {
 		text-align: center;
@@ -62,7 +81,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* Icon */
+	/* Icon */
 
 	.icon {
 		&.circle {
@@ -70,7 +89,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* Button */
+	/* Button */
 
 	input[type="button"],
 	input[type="submit"],
@@ -84,7 +103,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* List */
+	/* List */
 
 	ul {
 		&.icons {
@@ -106,7 +125,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* Wrapper */
+	/* Wrapper */
 
 	.wrapper {
 		margin-bottom: 2.5em;
@@ -133,7 +152,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* Banner */
+	/* Banner */
 
 	#banner {
 		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
@@ -160,7 +179,7 @@ $pattern-background-size: 10em;
 		}
 	}
 
-/* Main */
+	/* Main */
 
 	#main {
 		background-size: $pattern-background-size;
@@ -175,14 +194,14 @@ $pattern-background-size: 10em;
 		padding-bottom: 0;
 	}
 
-/* CTA */
+	/* CTA */
 
 	#cta {
 		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
 		padding: 3em 1.5em;
 	}
 
-/* Footer */
+	/* Footer */
 
 	#footer {
 		padding: 3em 1.5em;
