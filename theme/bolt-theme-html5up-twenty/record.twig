@@ -24,10 +24,10 @@
                     {% if record.imagelist %}
                         <section>
                             <br/>
-                            <header class="special container">
+                            <header class="special">
                                 <h2>Gallery</h2>
                             </header>
-                            <div>
+                            <div class="entry-gallery">
 
                                 {% set list = record.imagelist %}
 
@@ -40,22 +40,8 @@
                         </section>
                     {% endif %}
 
-                <footer>
-                    <div class="6u -3u">
-                        <br/><br/>
-                        <ul class="buttons vertical">
-                            <li><a href="{{ paths.files }}{{ record.file }}" class="button fit scrolly">Download the Presentation</a></li>
-                        </ul>
-                    </div>
-                </footer>
-            </div>
-        </section>
 
-        <section>
-            <header class="special container">
-                <h2>Check out other cool Projects</h2>
-            </header>
-            {% include('_row.twig') %}
+            </div>
         </section>
 
     </article>
