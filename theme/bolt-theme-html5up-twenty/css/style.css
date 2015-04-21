@@ -102,6 +102,9 @@ section .image.featured img, article .image.featured img {
   max-height: 600px; }
 section .entry-gallery, article .entry-gallery {
   text-align: center; }
+  section .entry-gallery a, article .entry-gallery a {
+    padding-left: 5px;
+    padding-right: 5px; }
 section .contact-form, article .contact-form {
   padding-top: 70px; }
   section .contact-form ul, article .contact-form ul {
