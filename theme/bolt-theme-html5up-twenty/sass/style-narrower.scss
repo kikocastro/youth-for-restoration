@@ -37,6 +37,25 @@
 		}
 	}
 
+	/* searchbox */
+
+	.mobile-search {
+		visibility: visible;
+	}
+
+	#wrap {
+	  margin: 18px 10px -43px 0px;
+
+	  input[type="submit"] {
+	  	min-width: 0;
+	  	width: 20px;
+	  }
+
+	  .icon {
+	  	font-size: 35px;
+	  }
+	}
+
 	/* Section/Article */
 
 	section {
