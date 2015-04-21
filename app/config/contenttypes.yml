@@ -76,7 +76,7 @@ projects:
 
 news:
     name: News
-    singular_name: News Post
+    singular_name: News
     fields:
         title:
             type: text
@@ -94,7 +94,7 @@ news:
             type: imagelist
             label: "Gallery"
             info: "Here you can add as many images as you want."
-    record_template: record.twig
+    record_template: news.twig
     listing_template: news-listing.twig
     listing_records: 8
     default_status: publish

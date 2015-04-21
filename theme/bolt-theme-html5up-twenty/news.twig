@@ -1,0 +1,42 @@
+{% extends 'master.twig' %}
+
+{% block bodyclass %}
+    no-sidebar
+{% endblock bodyclass %}
+
+{% block main %}
+    <article id="main">
+
+        <section class="wrapper style4 container">
+            <header>
+                <h2>{{ record.title }}</h2>
+            </header>
+            <div class="clearfix"></div>
+            {{ record.body }}
+            <br/>
+            {% if record.link_to_news is not empty %}
+                <p><a href="{{ record.link_to_news }}" target="_blank">View link</a> </p>
+            {% endif %}
+            <footer>
+                {% if record.imagelist %}
+                    <section>
+                        <br/>
+                        <div class="image-list">
+                            {% set list = record.imagelist %}
+                                {% for record in list %}
+                                    <a href="{{ image(record.filename) }}" data-lightbox="blogpost">
+                                        <img src="{{ thumbnail(record.filename, 200,130) }}" alt="{{ record.title }}" title="{{ record.title }}" target="_blank">
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+                </footer>
+            </section>
+
+        </article>
+    {% endblock main %}
+
+
+
+
