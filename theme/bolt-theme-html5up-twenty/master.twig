@@ -44,6 +44,7 @@
                         <link rel="stylesheet" href="{{ paths.theme }}css/style.css" />
                         <link rel="stylesheet" href="{{ paths.theme }}css/style-wide.css" />
                         <link rel="stylesheet" href="{{ paths.theme }}css/style-noscript.css" />
+                        <link rel="stylesheet" href="{{ paths.theme }}css/searchbox.css" />
                     </noscript>
                     <!--[if lte IE 8]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v8.css" /><![endif]-->
                     <!--[if lte IE 9]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v9.css" /><![endif]-->
@@ -66,32 +67,31 @@
                         <ul>
                             {{ menu('main', '_menu.twig') }}
                             <li>
+                                <div id="wrap">
+                                  <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" autocomplete="on">
+                                    <input id="search" name="q" type="text" placeholder="What are we looking for?">
+                                    <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
+                                  </form>
+                              </div>
+                          </li>
+                      </li>
+                  </ul>
+              </nav>
+          </header>
+      {% endblock header %}
 
-                            </li>
-                        </ul>
-                        {# one omnisearch here, for "small and up", the other in the side-navbar #}
-                        <form class="navbar-form hidden-xs" role="search">
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control semitransparent omnisearch" placeholder="{{ __('Find') }}…">
-                                <span class="form-control-feedback semitransparent"><i class="fa fa-search"></i></span>
-                            </div>
-                        </form>
-                    </nav>
-                </header>
-            {% endblock header %}
+      {% block banner %}
+      {% endblock banner %}
 
-            {% block banner %}
-            {% endblock banner %}
+      {% block main %}
+      {% endblock main %}
 
-            {% block main %}
-            {% endblock main %}
+      {% block cta %}
+      {% endblock cta %}
 
-            {% block cta %}
-            {% endblock cta %}
+      {% block footer %}
+        {% include('_footer.twig') %}
+    {% endblock footer %}
 
-            {% block footer %}
-                {% include('_footer.twig') %}
-            {% endblock footer %}
-
-        </body>
-        </html>
+</body>
+</html>
