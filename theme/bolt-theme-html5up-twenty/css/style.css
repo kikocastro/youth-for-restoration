@@ -475,6 +475,10 @@ input[type="reset"],
   .wrapper.style3 {
     background: #fff;
     color: inherit; }
+    .wrapper.style3 .search-listing img {
+      text-align: right; }
+    .wrapper.style3 .search-listing h3, .wrapper.style3 .search-listing p {
+      text-align: left; }
   .wrapper.style4 {
     background: #fff;
     color: inherit;

@@ -644,6 +644,17 @@ $pattern-background-size: 25em;
 		&.style3 {
 			background: $color-two-bg;
 			color: $color-two-fg;
+
+			.search-listing {
+
+				img {
+					text-align: right;
+				}
+
+				h3, p {
+					text-align: left;
+				}
+			}
 		}
 
 		&.style4 {

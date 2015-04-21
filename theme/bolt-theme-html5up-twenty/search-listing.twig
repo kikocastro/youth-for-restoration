@@ -1,0 +1,41 @@
+{% extends 'master.twig' %}
+
+{% block main %}
+    <article id="main">
+        <section class="wrapper style3 container special">
+
+            <header class="major">
+
+                <h2>{{ __('%number% Search results for <strong> %search% </strong>', { '%number%': searchresult.no_of_results,  '%search%': search|escape }) }}</h2>
+                {% if searchresult.no_of_results == 0 %}
+                    <p>How about trying a different search input?</p>
+                {% endif %}
+            </header>
+
+            {% for item in records %}
+                <div class="row search-listing">
+
+                    <div class="3u">
+                        {% if item.image is not empty %}
+                            <a href="{{ item.link }}" class=""><img src="{{ image(item.image) }}" alt="{{ item.title }}" class="listing-thumb" height="100" /></a>
+                        {% endif %}
+                    </div>
+
+                    <div class="9u">
+                        <header>
+                           <a href="{{ item.link }}">
+                            <h3>{{ item.title }}</h3>
+                        </a>
+                    </header>
+                    <a href="{{ item.link }}">
+                        {{ item.teaser }}
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+
+        {{ pager('', 3, '_pagination.twig' ) }}
+
+    </section>
+</article>
+{% endblock main%}
