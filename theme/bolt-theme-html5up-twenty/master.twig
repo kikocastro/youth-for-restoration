@@ -85,7 +85,7 @@
                 <header id="header" class="{% block headerclass %}{% endblock %}">
                     <div class="logo">
                         <a href="{{ paths.root }}" class="no-underline">
-                            <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" height="auto" alt="Love our community and cookies? Come and join us!">
+                            <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" height="100%" alt="Love our community and cookies? Come and join us!">
                         </a>
                     </div>
                     <nav id="nav">
@@ -95,18 +95,15 @@
                                 <div id="wrap">
                                     <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" role="search">
                                         <input id="search" name="q" type="text" placeholder="What are we looking for?">
-                                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
-                                    </form>
+                                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span>                                    </form>
                                 </div>
                             </li>
-                        </li>
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
                 <div id="wrap" class="mobile-search">
                     <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" role="search">
                         <input id="search" name="q" type="text" placeholder="What are we looking for?">
-                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span></input>
-                    </form>
+                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span>                    </form>
                 </div>
             </header>
         {% endblock header %}
