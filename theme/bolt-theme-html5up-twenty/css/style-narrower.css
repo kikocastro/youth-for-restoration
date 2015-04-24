@@ -128,4 +128,18 @@ body.index #main {
 #footer {
   padding: 4em 1.5em; }
 
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  min-height: 300px;
+  overflow: hidden; }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 50% !important; }
+
 /*# sourceMappingURL=style-narrower.css.map */
