@@ -1254,4 +1254,8 @@ body {
   .contact-wrap input[type="submit"]:hover {
     opacity: 0.8; }
 
+/* paypal */
+.paypal :focus {
+  outline: none; }
+
 /*# sourceMappingURL=style.css.map */
