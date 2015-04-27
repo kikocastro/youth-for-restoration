@@ -1,0 +1,56 @@
+{% form_theme form 'form_fields.twig' %}
+
+{% if error %}
+    <p class="simpleform-error">{{ error }}</p>
+{% endif %}
+{% if message %}
+    <p class="simpleform-message">{{ message }}</p>
+{% endif %}
+{% if recaptcha_theme %}
+<script>
+    var RecaptchaOptions = {
+        theme : '{{ recaptcha_theme }}'
+    };
+</script>
+{% endif %}
+<form method="post" enctype="multipart/form-data">
+    {{ form_widget(form) }}
+    <!--<div class="row half collapse-at-2">
+        <div class="6u">
+            {{ form_errors(form.name) }}
+            {{ form_widget(form.name) }}
+        </div>
+        <div class="6u">
+            {{ form_errors(form.email) }}
+            {{ form_widget(form.email) }}
+        </div>
+    </div>
+    <div class="row half">
+        <div class="12u">
+            {{ form_errors(form.subject) }}
+            {{ form_widget(form.subject) }}
+        </div>
+    </div>
+    <div class="row half">
+        <div class="12u">
+            {{ form_errors(form.message) }}
+            {{ form_widget(form.message) }}
+        </div>
+    </div>-->
+
+    {% if recaptcha_html %}
+    <div class="row half">
+        <div class="12u">
+            <label for="form_message" class="required">ReCaptcha</label>
+            {{ recaptcha_html|raw }}
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        <div class="12u">
+            <ul class="buttons">
+                <li class="pull-right"><input type="submit" name="submit" class="special" value="{{ button_text }}" /></li>
+            </ul>
+        </div>
+    </div>
+</form>

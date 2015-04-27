@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     $vendorDir . '/bolt/clientlogin/init.php',
     $vendorDir . '/bolt/members/init.php',
+    $vendorDir . '/bolt/simpleforms/init.php',
 );
