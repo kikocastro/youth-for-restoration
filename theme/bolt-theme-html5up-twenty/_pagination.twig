@@ -3,9 +3,11 @@
 {% if pager.totalpages > 1 %}
 <style>
 /* override pagination button */
-
+float: { right !important ;}
 </style>
-<footer class="major">
+<div class="row">
+
+<footer class="major pagination-wrapper">
   <ul class="pagination buttons">
 {# 'first' and 'prev' #}
 {% if pager.current > 1 and class!="narrow" %}
@@ -38,4 +40,5 @@
 {% endif %}
   </ul>
 </footer>
+</div>
 {% endif %}

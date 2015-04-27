@@ -1433,6 +1433,12 @@ $pattern-background-size: 25em;
 
 				/* pagination */
 
+				.pagination-wrapper {
+					clear: both;
+					float: right !important;
+					margin-right: 10%;
+				}
+
 				.pagination .button {
 					min-width: initial;
 				}

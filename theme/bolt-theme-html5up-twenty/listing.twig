@@ -18,7 +18,6 @@
             {% if loop.index is odd %}
             <div class="row">
             {% endif %}
-
                 <div class="6u">
                     <section>
                         {% if item.image is not empty %}
@@ -39,9 +38,8 @@
             </div>
             {% endif %}
             {% endfor %}
-
+        </div>
             {{ pager('', 3, '_pagination.twig' ) }}
-
         </section>
     </article>
 {% endblock main%}

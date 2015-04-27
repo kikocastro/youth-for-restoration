@@ -1153,6 +1153,11 @@ body:after {
   opacity: 1; }
 
 /* pagination */
+.pagination-wrapper {
+  clear: both;
+  float: right !important;
+  margin-right: 10%; }
+
 .pagination .button {
   min-width: initial; }
 
