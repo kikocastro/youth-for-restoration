@@ -29,15 +29,6 @@ about_us:
         image:
             type: image
             group: media
-        seotitle: &seotitle
-            prefix: '<hr><h3>SEO settings</h3>'
-            label: Title
-            type: text
-            class: wide
-            pattern: "^.{1,70}$"
-            error: "The title field must be no longer than 70 characters"
-            postfix: "Will be used as the <tt>&lt;title&gt;</tt> and in search engines. Limit the length to 70 chars."
-            group: seo
         metadescription: &metadescription
             type: textarea
             label: Metadescription
@@ -84,7 +75,6 @@ projects:
             prefix: "<h4>Upload the presentation file for this project:</h4>"
             info: "Upload the presentation file for this project"
             label: "Presentation file"
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: project.twig
     listing_template: listing.twig
@@ -113,7 +103,6 @@ news:
             type: imagelist
             label: "Gallery"
             info: "Here you can add as many images as you want."
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: news.twig
     listing_template: news-listing.twig
@@ -154,7 +143,6 @@ volunteer:
         image:
             type: image
             group: media
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: volunteer.twig
     default_status: publish
@@ -192,7 +180,6 @@ donate:
         image:
             type: image
             group: media
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: donate.twig
     default_status: publish
@@ -226,7 +213,6 @@ blog:
             type: imagelist
             label: "Gallery images"
             info: "Here you can add as many images as you want to the gallery."
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: blogpost.twig
     listing_template: listing.twig
@@ -257,7 +243,6 @@ contact:
         image:
             type: image
             group: media
-        seotitle: *seotitle
         metadescription: *metadescription
     record_template: contact.twig
     default_status: publish
