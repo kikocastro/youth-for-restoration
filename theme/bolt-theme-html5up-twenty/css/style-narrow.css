@@ -39,6 +39,9 @@ footer ul.buttons li {
 section .image.featured img, article .image.featured img {
   width: 100%; }
 
+.image.featured {
+  margin: 81px 0 0px 0; }
+
 /* Banner */
 #banner {
   background-size: 15em, 15em, auto, cover; }
