@@ -29,6 +29,7 @@
     },
     "require": {
         "bolt/members": "~2.1",
+        "bolt/simpleforms": "~1.1",
         "xiaohutai/bolt-theme-html5up-twenty": "0.2.*"
     }
 }
