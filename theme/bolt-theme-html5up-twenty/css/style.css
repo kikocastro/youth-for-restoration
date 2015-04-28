@@ -540,45 +540,47 @@ input[type="reset"],
     right: 1.5em;
     text-transform: uppercase;
     top: 2em; }
-    #header nav ul li {
-      display: inline-block;
-      margin-left: 1.5em; }
-      #header nav ul li > ul {
-        display: none; }
-      #header nav ul li a {
-        border: solid 1px transparent;
-        color: inherit;
+    #header nav ul {
+      margin-right: 30px; }
+      #header nav ul li {
         display: inline-block;
-        line-height: 1em;
-        text-decoration: none; }
-      #header nav ul li input[type="button"],
-      #header nav ul li input[type="submit"],
-      #header nav ul li input[type="reset"],
-      #header nav ul li .button {
-        font-size: 1em;
-        min-width: 0;
-        width: auto; }
-      #header nav ul li.submenu > a {
-        text-decoration: none; }
-        #header nav ul li.submenu > a:before {
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-font-smoothing: antialiased;
-          font-family: FontAwesome;
-          font-style: normal;
-          font-weight: normal;
-          text-transform: none !important; }
-        #header nav ul li.submenu > a:before {
-          content: '\f107';
-          margin-right: 0.65em; }
-      #header nav ul li.active > a, #header nav ul li:hover > a {
-        -moz-transition: all 0.2s ease-in-out;
-        -webkit-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        background: rgba(188, 202, 206, 0.15); }
-      #header nav ul li.current > a {
-        font-weight: 900; }
+        margin-left: 1.5em; }
+        #header nav ul li > ul {
+          display: none; }
+        #header nav ul li a {
+          border: solid 1px transparent;
+          color: inherit;
+          display: inline-block;
+          line-height: 1em;
+          text-decoration: none; }
+        #header nav ul li input[type="button"],
+        #header nav ul li input[type="submit"],
+        #header nav ul li input[type="reset"],
+        #header nav ul li .button {
+          font-size: 1em;
+          min-width: 0;
+          width: auto; }
+        #header nav ul li.submenu > a {
+          text-decoration: none; }
+          #header nav ul li.submenu > a:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: none !important; }
+          #header nav ul li.submenu > a:before {
+            content: '\f107';
+            margin-right: 0.65em; }
+        #header nav ul li.active > a, #header nav ul li:hover > a {
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          background: rgba(188, 202, 206, 0.15); }
+        #header nav ul li.current > a {
+          font-weight: 900; }
   #header.reveal {
     -moz-animation: reveal-header 0.5s;
     -webkit-animation: reveal-header 0.5s;
@@ -1195,23 +1197,19 @@ body:after {
   height: 0;
   clear: both; }
 
-.mobile-search {
-  visibility: hidden;
-  height: 0 !important; }
-
 body {
   background: #DDD;
   font-size: 15px; }
 
-.contact-wrap {
-  margin: 0px 0px -37px 0px;
+.search-wrap {
+  margin: 0px -34px -37px 0px;
   display: inline-block;
   position: relative;
   height: 60px;
   float: right;
   padding: 0;
   position: relative; }
-  .contact-wrap input[type="text"] {
+  .search-wrap input[type="text"] {
     height: 60px;
     font-size: 35px;
     display: inline-block;
@@ -1230,17 +1228,17 @@ body {
     z-index: 3;
     transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
     cursor: pointer; }
-  .contact-wrap input[type="text"]:focus:hover {
+  .search-wrap input[type="text"]:focus:hover {
     border-bottom: 1px solid #BBB;
     background-color: #F2F2F2; }
-  .contact-wrap input[type="text"]:focus {
+  .search-wrap input[type="text"]:focus {
     width: 470px;
     top: 60px;
     z-index: 1;
     border-bottom: 1px solid #BBB;
     cursor: text;
     background-color: #F2F2F2; }
-  .contact-wrap input[type="submit"] {
+  .search-wrap input[type="submit"] {
     height: 30px;
     width: 63px;
     top: 5px;
@@ -1256,7 +1254,7 @@ body {
     opacity: 0;
     cursor: pointer;
     transition: opacity .4s ease; }
-  .contact-wrap input[type="submit"]:hover {
+  .search-wrap input[type="submit"]:hover {
     opacity: 0.8; }
 
 /* paypal */

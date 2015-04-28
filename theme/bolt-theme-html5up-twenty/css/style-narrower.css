@@ -20,15 +20,12 @@ header.special {
     padding-top: 1.25em; }
 
 /* searchbox */
-.mobile-search {
-  visibility: visible; }
-
-#wrap {
-  margin: 18px 10px -43px 0px; }
-  #wrap input[type="submit"] {
+.search-wrap {
+  margin: -22px -30px -43px 0px; }
+  .search-wrap input[type="submit"] {
     min-width: 0;
     width: 20px; }
-  #wrap .icon {
+  .search-wrap .icon {
     font-size: 35px; }
 
 /* Section/Article */
@@ -65,7 +62,7 @@ ul.buttons li {
   padding: 1em 0 0 0; }
 
 /* Header */
-#header nav {
+#header nav#nav {
   display: none; }
 #header .logo {
   float: left; }

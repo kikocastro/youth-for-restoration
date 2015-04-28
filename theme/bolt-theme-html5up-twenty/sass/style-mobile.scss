@@ -26,25 +26,6 @@ $pattern-background-size: 10em;
 		text-align: justify;
 	}
 
-	/* searchbox */
-
-	#wrap {
-		margin: 18px 0px -43px 0px;
-
-		input[type="text"] {
-			font-size: 20px;
-		}
-
-		input[type="text"]:focus {
-			width: 270px;
-		}
-
-		input[type="submit"] {
-			min-width: 0;
-			width: 20px;
-		}
-	}
-
 	/* Section/Article */
 
 	header {

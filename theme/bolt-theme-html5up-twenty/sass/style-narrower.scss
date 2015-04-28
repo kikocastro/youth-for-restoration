@@ -39,12 +39,8 @@
 
 	/* searchbox */
 
-	.mobile-search {
-		visibility: visible;
-	}
-
-	#wrap {
-	  margin: 18px 10px -43px 0px;
+	.search-wrap {
+	  margin: -22px -30px -43px 0px;
 
 	  input[type="submit"] {
 	  	min-width: 0;
@@ -120,7 +116,7 @@
 
 	#header {
 
-		nav {
+		nav#nav {
 			display: none;
 		}
 

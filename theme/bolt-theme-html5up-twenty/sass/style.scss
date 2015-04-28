@@ -717,6 +717,7 @@ $pattern-background-size: 25em;
 			top: 2em;
 
 			ul {
+					margin-right: 30px;
 				li {
 					display: inline-block;
 					margin-left: 1.5em;
@@ -1500,11 +1501,6 @@ $pattern-background-size: 25em;
 
 // searchbox
 
-.mobile-search {
-	visibility: hidden;
-	height: 0 !important;
-}
-
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
@@ -1513,8 +1509,8 @@ body {
 	background: #DDD;
 	font-size: 15px;
 }
-.contact-wrap {
-	margin: 0px 0px -37px 0px;
+.search-wrap {
+	margin: 0px -34px -37px 0px;
 	display: inline-block;
 	position: relative;
 	height: 60px;

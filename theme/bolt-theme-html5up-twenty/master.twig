@@ -52,24 +52,24 @@
 
             {%- endblock head %}
 
-    </head>
-    <body class="{% block bodyclass %}{% endblock %}">
-        {# facebook app #}
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '1643953349166751',
-              xfbml      : true,
-              version    : 'v2.3'
-            });
-          };
+        </head>
+        <body class="{% block bodyclass %}{% endblock %}">
+            {# facebook app #}
+            <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  appId      : '1643953349166751',
+                  xfbml      : true,
+                  version    : 'v2.3'
+              });
+            };
 
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "//connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
         </script>
         <div id="fb-root"></div>
@@ -79,33 +79,34 @@
           js = d.createElement(s); js.id = id;
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1643953349166751";
           fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-            {% block header %}
-                <header id="header" class="{% block headerclass %}{% endblock %}">
-                    <div class="logo">
-                        <a href="{{ paths.root }}" class="no-underline">
-                            <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" alt="Love our community and cookies? Come and join us!">
-                        </a>
-                    </div>
-                    <nav id="nav">
-                        <ul>
-                            {{ menu('main', '_menu.twig') }}
-                            <li>
-                                <div id="wrap1" class="contact-wrap">
-                                    <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" role="search">
-                                        <input id="search" name="q" type="text" placeholder="What are we looking for?">
-                                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span>                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                <div id="wrap2" class="mobile-search contact-wrap">
-                    <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" role="search">
-                        <input id="search" name="q" type="text" placeholder="What are we looking for?">
-                        <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span>                    </form>
-                </div>
-            </header>
+      {% block header %}
+        <header id="header" class="{% block headerclass %}{% endblock %}">
+            <div class="logo">
+                <a href="{{ paths.root }}" class="no-underline">
+                    <img id='yfr-logo' src="{{ app.paths.app }}view/img/logo.png" width="115" alt="Love our community and cookies? Come and join us!">
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    {{ menu('main', '_menu.twig') }}
+                </ul>
+            </nav>
+            <nav>
+
+                <ul>
+                    <li>
+                        <div class="search-wrap">
+                            <form method="get" action="{{ paths.root }}search" id="searchform" enctype="text/plain" role="search">
+                                <input id="search" name="q" type="text" placeholder="What are we looking for?">
+                                <input id="search_submit" value="" type="submit"><span class="icon fa-search"></span>
+                           </form>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         {% endblock header %}
 
         {% block banner %}
