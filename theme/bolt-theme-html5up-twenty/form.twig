@@ -6,6 +6,32 @@
 {% if message %}
     <p class="simpleform-message">{{ message }}</p>
 {% endif %}
+
+{% if sent %}
+    <script>
+
+        $(document).ready(function() {
+
+            $.fn.clearForm = function() {
+              return this.each(function() {
+                var type = this.type, tag = this.tagName.toLowerCase();
+                if (tag == 'form')
+                  return $(':input',this).clearForm();
+                if (type == 'text' || type == 'email' || tag == 'textarea')
+                  this.value = '';
+                else if (type == 'checkbox' || type == 'radio')
+                  this.checked = false;
+                else if (tag == 'select')
+                  this.selectedIndex = -1;
+              });
+            };
+
+            $("#submit-button").closest("form").clearForm();
+            $(document).scrollTop( $(".contact-form").offset().top );
+        });
+    </script>
+{% endif %}
+
 {% if recaptcha_theme %}
 <script>
     var RecaptchaOptions = {
@@ -49,7 +75,7 @@
     <div class="row">
         <div class="12u">
             <ul class="buttons">
-                <li class="pull-right"><input type="submit" name="submit" class="special" value="{{ button_text }}" /></li>
+                <li class="pull-right"><input id="submit-button" type="submit" name="submit" class="special" value="{{ button_text }}" /></li>
             </ul>
         </div>
     </div>
