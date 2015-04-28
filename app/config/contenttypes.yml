@@ -30,6 +30,7 @@ about_us:
             type: image
             group: media
         metadescription: &metadescription
+            group: seo
             type: textarea
             label: Metadescription
             pattern: "^.{1,156}$"
