@@ -771,6 +771,8 @@ input[type="reset"],
       left: 3px; }
   #footer ul {
     font-size: 16px; }
+  #footer .social-media-panel {
+    padding-left: 10%; }
   #footer .latest-entries h4 {
     color: #fff;
     text-transform: none;

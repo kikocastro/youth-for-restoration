@@ -72,5 +72,7 @@ section .image.featured img, article .image.featured img {
 /* footer */
 #footer {
   padding: 4em 3.5em !important; }
+  #footer .social-media-panel {
+    padding-left: 5%; }
 
 /*# sourceMappingURL=style-narrow.css.map */
