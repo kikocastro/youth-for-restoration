@@ -29,6 +29,9 @@ footer.major {
   .wrapper.style4 {
     padding: 3em; }
 
+.image.featured {
+  margin: 82px 0 0px 0; }
+
 /* Header */
 #header nav ul li {
   margin-left: 1em; }

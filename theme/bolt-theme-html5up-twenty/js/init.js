@@ -10,7 +10,7 @@
 		reset: 'full',
 		breakpoints: {
 			global:		{ range: '*', href: paths.theme + 'css/style.css', containers: 1400, grid: { gutters: 50 } },
-			wide:		{ range: '-1680', href: paths.theme + 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+			wide:		{ range: '-3840', href: paths.theme + 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
 			normal:		{ range: '-1280', href: paths.theme + 'css/style-normal.css', containers: 960, viewport: { scalable: false } },
 			narrow:		{ range: '-980', href: paths.theme + 'css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
 			narrower:	{ range: '-840', href: paths.theme + 'css/style-narrower.css', grid: { collapse: 1 } },
@@ -73,7 +73,7 @@
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
-			
+
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
 			});
@@ -92,7 +92,7 @@
 				}
 
 			}
-			
+
 		// Scrolly links.
 			$('.scrolly').scrolly(1000, -10);
 
@@ -122,7 +122,7 @@
 					});
 
 				});
-			
+
 			}
 
 	});
