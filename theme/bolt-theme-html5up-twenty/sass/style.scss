@@ -1433,6 +1433,12 @@ $pattern-background-size: 25em;
 
 				/* pagination */
 
+				.pagination-wrapper {
+					clear: both;
+					float: right !important;
+					margin-right: 10%;
+				}
+
 				.pagination .button {
 					min-width: initial;
 				}
@@ -1569,5 +1575,13 @@ body {
 
 	input[type="submit"]:hover {
 		opacity: 0.8;
+	}
+}
+
+/* paypal */
+
+.paypal {
+	:focus {
+		outline: none;
 	}
 }
