@@ -44,7 +44,6 @@
                         <link rel="stylesheet" href="{{ paths.theme }}css/style.css" />
                         <link rel="stylesheet" href="{{ paths.theme }}css/style-wide.css" />
                         <link rel="stylesheet" href="{{ paths.theme }}css/style-noscript.css" />
-                        <link rel="stylesheet" href="{{ paths.theme }}css/searchbox.css" />
                     </noscript>
                     <!--[if lte IE 8]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v8.css" /><![endif]-->
                     <!--[if lte IE 9]><link rel="stylesheet" href="{{ paths.theme }}css/ie/v9.css" /><![endif]-->
@@ -55,6 +54,7 @@
 
     </head>
     <body class="{% block bodyclass %}{% endblock %}">
+        {# facebook app #}
         <script>
           window.fbAsyncInit = function() {
             FB.init({

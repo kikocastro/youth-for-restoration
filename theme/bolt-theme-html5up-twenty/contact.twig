@@ -1,5 +1,12 @@
 {% extends 'master.twig' %}
 
+{%- block stylesheets %}
+
+    {{parent()}}
+    <link rel="stylesheet" href="{{ paths.theme }}css/simpleforms.css" />
+
+{% endblock stylesheets %}
+
 {% block bodyclass %}
 	index
 {% endblock bodyclass %}
@@ -61,46 +68,14 @@
 						<header>
 							<h2>Send us your message</h2>
 						</header>
-						<div class="content">
+						<div id="contact-form" class="content">
 							{{ simpleform('contact') }}
-
-							<!--<form>
-								<div class="row half collapse-at-2">
-									<div class="6u">
-										<input type="text" name="name" placeholder="Name" />
-									</div>
-									<div class="6u">
-										<input type="text" name="email" placeholder="Email" />
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<input type="text" name="subject" placeholder="Subject" />
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="buttons">
-											<li class="pull-right"><input type="submit" class="special" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>-->
 						</div>
-
 					</section>
-
 
 				</div>
 			</div>
 		</section>
-
-
 
 	</article>
 {% endblock main %}

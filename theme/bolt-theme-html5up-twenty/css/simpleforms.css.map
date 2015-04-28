@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oBAAqB;EACnB,UAAU,EAAE,IAAI;EAEhB,qCAAiB;IACf,MAAM,EAAE,KAAK",
+"sources": ["../sass/simpleforms.scss"],
+"names": [],
+"file": "simpleforms.css"
+}
