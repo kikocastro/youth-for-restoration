@@ -279,14 +279,12 @@ volunteer_info:
         email:
             type: text
             group: info
-            required: true
             pattern: email
         phone:
             type: text
             group: info
         address1:
             type: text
-            required: true
             group: info
             label: Address line 1
         address2:
@@ -295,15 +293,12 @@ volunteer_info:
             label: Address line 2
         city:
             type: text
-            required: true
             group: info
         state:
             type: text
-            required: true
             group: info
         zip:
             type: text
-            required: true
             group: info
         description:
             type: html
@@ -327,7 +322,6 @@ sponsor_info:
         email:
             type: text
             group: info
-            required: true
             pattern: email
         phone:
             type: text
