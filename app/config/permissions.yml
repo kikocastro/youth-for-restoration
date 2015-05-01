@@ -48,7 +48,7 @@ roles-hierarchy:
     # and deleted by [ root, admin ] roles.
     manipulate:
         admin: [ ]
-        site-admin: [ admin ]
+        site-admin: [ admin, site-admin ]
         author: [admin, site-admin]
 #        developer: [ admin ]
 #        chief-editor: [ admin, developer ]
